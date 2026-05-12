@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haddow Landing — Homeowner Handbook</title>
+<meta name="description" content="Policies, Bylaws, and Frequently Asked Questions for owners and residents of Haddow Landing, Condominium Corporation 1720499, Edmonton, Alberta.">
+
+<!-- Google Translate widget -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'ar,bn,zh-CN,zh-TW,nl,fr,de,gu,hi,it,ja,ko,fa,pa,pl,pt,ru,es,tl,ta,th,tr,uk,ur,vi',
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+  :root{
+    /* Official Alberta flag palette (Wikipedia) */
+    --brand:#003594;          /* Flag blue */
+    --brand-dark:#00215C;     /* Darker shade for gradients */
+    --brand-light:#1B4FB8;    /* Hover / lighter accent */
+    --accent:#F9E547;         /* Flag yellow */
+    --accent-dark:#D6C019;    /* Darker yellow for hovers */
+    --flag-red:#EE2737;       /* Flag red (for highlights) */
+    --flag-green:#046A38;     /* Flag green (for "yes" badges) */
+    --bg:#f4f6fa;
+    --card:#ffffff;
+    --text:#1a1a1a;
+    --muted:#5a6478;
+    --border:#d7dde8;
+    --shadow:0 2px 10px rgba(0,0,0,.06);
+    --radius:10px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:96px}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    font-size:16px;
+  }
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* Header */
+  header.site{
+    position:sticky;top:0;z-index:100;
+    background:linear-gradient(180deg,var(--brand) 0%,var(--brand-dark) 100%);
+    color:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.18);
+    border-bottom:3px solid var(--accent);
+  }
+  .header-inner{
+    max-width:1200px;margin:0 auto;
+    padding:14px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+  .brand-block{display:flex;align-items:center;gap:14px}
+  /* ===== Branded circular logo with depth ===== */
+  .brand-logo{
+    position:relative;
+    width:72px;height:72px;border-radius:50%;
+    background:radial-gradient(circle at 30% 25%,#ffffff 0%,#f3f6fc 65%,#dee5f3 100%);
+    padding:5px;
+    flex-shrink:0;
+    box-shadow:
+      0 0 0 2px var(--accent),                 /* inner gold ring */
+      0 0 0 4px rgba(255,255,255,.85),         /* white halo */
+      0 0 0 6px var(--brand-dark),             /* blue outer ring */
+      0 8px 20px rgba(0,0,0,.45),              /* drop shadow */
+      0 2px 4px rgba(0,0,0,.3),                /* close shadow */
+      inset 0 2px 4px rgba(255,255,255,.9),    /* top highlight */
+      inset 0 -3px 6px rgba(0,53,148,.15);     /* bottom inner shade */
+    transition:transform .25s ease,box-shadow .25s ease;
+  }
+  .brand-logo::after{
+    content:"";
+    position:absolute;top:6px;left:10px;
+    width:30%;height:25%;
+    border-radius:50%;
+    background:radial-gradient(ellipse,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 70%);
+    pointer-events:none;
+  }
+  .brand-logo:hover{
+    transform:scale(1.05) rotate(-2deg);
+    box-shadow:
+      0 0 0 2px var(--accent),
+      0 0 0 4px rgba(255,255,255,.95),
+      0 0 0 6px var(--brand-dark),
+      0 12px 28px rgba(0,0,0,.55),
+      0 4px 8px rgba(0,0,0,.35),
+      inset 0 2px 4px rgba(255,255,255,.9),
+      inset 0 -3px 6px rgba(0,53,148,.15);
+  }
+  .brand-logo svg,
+  .brand-logo img{
+    width:100%;height:100%;border-radius:50%;display:block;
+    object-fit:cover;
+  }
+  .brand-logo.logo-fallback{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(145deg,#f7f9ff 0%,#dfe8fb 100%);
+  }
+  .brand-logo.logo-fallback::before{
+    content:"HL";
+    color:var(--brand-dark);
+    font-size:1.05rem;
+    font-weight:900;
+    letter-spacing:.06em;
+  }
+  .brand{font-weight:700;font-size:1.2rem;letter-spacing:.3px;line-height:1.2}
+  .brand small{display:block;font-weight:400;font-size:.78rem;opacity:.9;margin-top:3px}
+  .header-tools{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+
+  /* Prominent translate bar */
+  .translate-bar{
+    background:var(--accent);
+    color:var(--brand-dark);
+    border-bottom:1px solid var(--accent-dark);
+    box-shadow:0 1px 3px rgba(0,0,0,.08);
+  }
+  .translate-bar-inner{
+    max-width:1200px;margin:0 auto;
+    padding:10px 20px;
+    display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+    font-size:.95rem;
+  }
+  .translate-bar strong{font-weight:700}
+  .translate-pill{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:34px;
+    min-height:24px;
+    padding:4px 10px;
+    border-radius:999px;
+    border:1px solid rgba(0,53,148,.35);
+    background:#fff;
+    color:var(--brand-dark);
+    font-size:.78rem;
+    font-weight:800;
+    letter-spacing:.2px;
+    line-height:1;
+    white-space:nowrap;
+  }
+  #google_translate_element{
+    background:transparent;
+    border-radius:0;
+    padding:0;
+    box-shadow:none;
+    display:inline-flex;align-items:center;
+  }
+  /* Hide Google gadget text (including "Powered by") while keeping the select visible. */
+  #google_translate_element .goog-te-gadget{
+    font-size:0 !important;
+    line-height:1.2 !important;
+    color:transparent !important;
+    font-family:inherit !important;
+  }
+  #google_translate_element .goog-te-gadget > span,
+  #google_translate_element .goog-te-gadget > div > span,
+  #google_translate_element .goog-logo-link,
+  #google_translate_element .goog-te-gadget span,
+  #google_translate_element .goog-te-gadget a{
+    display:none !important;
+  }
+  #google_translate_element .goog-te-gadget-icon,
+  #google_translate_element img,
+  #google_translate_element .VIpgJd-ZVi9od-l4eHX-hSRGPd,
+  #google_translate_element .VIpgJd-ZVi9od-xl07Ob-lTBxed{
+    display:none !important;
+  }
+  #google_translate_element .goog-te-gadget select.goog-te-combo,
+  #google_translate_element select{
+    font-size:1.05rem !important;
+    padding:7px 12px !important;
+    border:1px solid rgba(0,53,148,.55) !important;
+    border-radius:6px !important;
+    background:rgba(255,255,255,.92) !important;
+    color:var(--brand-dark) !important;
+    font-weight:700 !important;
+    cursor:pointer !important;
+    min-width:220px !important;
+    height:auto !important;
+    line-height:1.3 !important;
+    appearance:auto !important;
+    -webkit-appearance:auto !important;
+    margin:0 !important;
+    font-family:inherit !important;
+  }
+  #google_translate_element select option{
+    font-size:1rem !important;
+    color:#0f172a !important;
+    background:#fff !important;
+    padding:6px !important;
+    font-weight:500 !important;
+  }
+  .translate-hint{font-size:.85rem;opacity:.9}
+  .translate-reset{
+    border:1px solid rgba(0,53,148,.55);
+    background:rgba(255,255,255,.92);
+    color:var(--brand-dark);
+    border-radius:6px;
+    padding:7px 12px;
+    font-size:1.05rem;
+    font-weight:700;
+    min-height:40px;
+    cursor:pointer;
+    line-height:1.3;
+    font-family:inherit;
+  }
+  .translate-reset:hover{
+    background:var(--brand-dark);
+    color:#fff;
+    border-color:var(--brand-dark);
+  }
+  .search-wrap{position:relative}
+  #searchBox{
+    padding:8px 12px 8px 34px;
+    border:none;border-radius:6px;
+    width:240px;font-size:.9rem;
+  }
+  .search-wrap::before{
+    content:"🔍";position:absolute;left:10px;top:50%;transform:translateY(-50%);
+    font-size:.85rem;opacity:.6;
+  }
+  .menu-toggle{
+    display:none;background:transparent;border:1px solid rgba(255,255,255,.4);
+    color:#fff;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:.9rem;
+  }
+
+  /* Layout */
+  .layout{
+    max-width:1200px;margin:0 auto;padding:24px 20px;
+    display:grid;grid-template-columns:260px 1fr;gap:32px;
+  }
+  /* ===== Stylized accordion sidebar ===== */
+  nav.toc{
+    position:sticky;top:96px;align-self:start;
+    background:linear-gradient(180deg,#ffffff 0%,#f7f9ff 100%);
+    border:1px solid #d3dcef;
+    border-radius:14px;
+    padding:14px 12px;
+    max-height:calc(100vh - 120px);overflow-y:auto;
+    box-shadow:
+      0 10px 30px rgba(0,53,148,.12),
+      0 2px 8px rgba(0,53,148,.08),
+      0 0 0 1px rgba(255,255,255,.6) inset;
+    border-top:4px solid var(--accent);
+  }
+  nav.toc::-webkit-scrollbar{width:8px}
+  nav.toc::-webkit-scrollbar-thumb{background:var(--brand-light);border-radius:4px}
+  nav.toc::-webkit-scrollbar-track{background:transparent}
+
+  .toc-title{
+    margin:4px 4px 12px;
+    padding:8px 10px;
+    font-size:.78rem;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:#fff;
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);
+    border-radius:8px;
+    text-align:center;
+    font-weight:700;
+    box-shadow:0 2px 6px rgba(0,53,148,.25);
+  }
+
+  details.toc-group{
+    margin:6px 0;
+    border-radius:10px;
+    background:#fff;
+    border:1px solid #e2e7f1;
+    box-shadow:0 1px 3px rgba(0,53,148,.06);
+    overflow:hidden;
+    transition:box-shadow .2s ease,border-color .2s ease,transform .15s ease;
+  }
+  details.toc-group:hover{
+    border-color:var(--brand-light);
+    box-shadow:0 4px 12px rgba(0,53,148,.12);
+  }
+  details.toc-group[open]{
+    border-color:var(--brand);
+    box-shadow:0 4px 14px rgba(0,53,148,.18);
+  }
+
+  details.toc-group > summary{
+    list-style:none;
+    cursor:pointer;
+    user-select:none;
+    padding:11px 14px 11px 12px;
+    display:flex;align-items:center;gap:10px;
+    font-size:.92rem;font-weight:600;
+    color:var(--brand-dark);
+    border-left:4px solid var(--accent);
+    border-radius:8px;
+    background:#fff;
+    transition:background .18s ease,color .18s ease;
+  }
+  details.toc-group > summary::-webkit-details-marker{display:none}
+  details.toc-group > summary::marker{display:none;content:""}
+  details.toc-group > summary:hover{
+    background:linear-gradient(90deg,#fff7c2 0%,#fffbe6 100%);
+    color:var(--brand);
+  }
+  details.toc-group[open] > summary{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-light) 100%);
+    color:#fff;
+    border-left-color:var(--accent);
+    border-radius:8px 8px 0 0;
+  }
+  details.toc-group[open] > summary .toc-chevron{transform:rotate(180deg)}
+
+  .toc-icon{
+    font-size:1.05rem;
+    flex-shrink:0;
+    width:22px;text-align:center;
+  }
+  .toc-label{flex:1;line-height:1.2}
+  .toc-chevron{
+    font-size:.7rem;
+    transition:transform .25s ease;
+    opacity:.85;
+  }
+
+  details.toc-group ul{
+    list-style:none;
+    margin:0;padding:6px 8px 10px;
+    animation:tocFade .22s ease-out;
+  }
+  details.toc-group li{margin:2px 0}
+  details.toc-group a{
+    display:flex;align-items:center;gap:8px;
+    padding:7px 10px 7px 14px;
+    border-radius:6px;
+    color:var(--text);
+    font-size:.88rem;
+    line-height:1.3;
+    border-left:2px solid transparent;
+    transition:all .15s ease;
+  }
+  details.toc-group a::before{
+    content:"›";
+    color:var(--brand-light);
+    font-weight:700;
+    flex-shrink:0;
+  }
+  details.toc-group a:hover{
+    background:#eef3fb;
+    color:var(--brand);
+    text-decoration:none;
+    border-left-color:var(--accent);
+    padding-left:16px;
+  }
+  details.toc-group a:hover::before{color:var(--accent-dark)}
+
+  @keyframes tocFade{
+    from{opacity:0;transform:translateY(-4px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+
+  /* Expand/Collapse All controls */
+  .toc-controls{
+    display:flex;gap:6px;margin:0 4px 10px;
+  }
+  .toc-controls button{
+    flex:1;
+    font-size:.72rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    padding:6px 8px;
+    border:1px solid var(--border);
+    background:#fff;
+    color:var(--brand-dark);
+    border-radius:6px;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .toc-controls button:hover{
+    background:var(--brand);
+    color:#fff;
+    border-color:var(--brand);
+  }
+
+  /* Main */
+  main{min-width:0}
+  .hero{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);
+    color:#fff;
+    padding:36px 32px;
+    border-radius:var(--radius);
+    margin-bottom:24px;
+    box-shadow:var(--shadow);
+  }
+  .hero h1{margin:0 0 8px;font-size:2rem;line-height:1.2}
+  .hero p{margin:6px 0;opacity:.95}
+  .hero .meta{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;
+    margin-top:18px;font-size:.9rem;
+  }
+  .hero .meta div{background:rgba(255,255,255,.1);padding:10px 14px;border-radius:8px}
+  .hero .meta strong{display:block;font-size:.75rem;text-transform:uppercase;opacity:.75;letter-spacing:.5px;margin-bottom:2px}
+
+  section.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:28px 32px;
+    margin-bottom:20px;
+    box-shadow:var(--shadow);
+  }
+  section.card h2{
+    margin:0 0 6px;color:var(--brand);
+    border-bottom:3px solid var(--accent);
+    padding-bottom:8px;
+    display:inline-block;
+    font-size:1.5rem;
+  }
+  section.card .subtitle{color:var(--muted);font-size:.95rem;margin:6px 0 18px}
+
+  /* Quick links */
+  .quick-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;
+  }
+  .quick-link{
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:14px 16px;
+    color:var(--text);
+    transition:all .15s;
+    display:flex;align-items:center;gap:10px;
+  }
+  .quick-link:hover{
+    background:#fff;border-color:var(--accent);
+    transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08);
+    text-decoration:none;
+  }
+  .quick-link .qicon{font-size:1.4rem}
+  .quick-link strong{display:block;font-size:.95rem}
+  .quick-link span{font-size:.82rem;color:var(--muted)}
+
+  /* FAQ */
+  details.faq{
+    border:1px solid var(--border);
+    border-radius:8px;
+    margin-bottom:10px;
+    background:var(--card);
+    overflow:hidden;
+  }
+  details.faq[open]{border-color:var(--accent)}
+  details.faq summary{
+    padding:14px 18px;
+    cursor:pointer;
+    font-weight:600;
+    color:var(--brand);
+    list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{
+    content:"+";
+    font-size:1.4rem;
+    color:var(--accent);
+    transition:transform .2s;
+    flex-shrink:0;
+  }
+  details.faq[open] summary::after{content:"−"}
+  details.faq summary:hover{background:var(--bg)}
+  details.faq .faq-body{padding:0 18px 16px;color:#333}
+  details.faq .faq-body p:first-child{margin-top:0}
+  details.faq .ref{
+    display:inline-block;margin-top:8px;font-size:.82rem;
+    background:var(--bg);padding:3px 8px;border-radius:4px;color:var(--muted);
+  }
+
+  /* Policies / Bylaws */
+  .policy{
+    border-left:4px solid var(--accent);
+    background:var(--bg);
+    padding:16px 20px;
+    border-radius:0 8px 8px 0;
+    margin-bottom:14px;
+  }
+  .policy h3{margin:0 0 8px;color:var(--brand);font-size:1.1rem}
+  .policy ul{margin:6px 0;padding-left:22px}
+  .policy ul ul{margin-top:4px}
+  .policy li{margin:3px 0}
+
+  .bylaw{
+    padding:12px 16px;
+    border-bottom:1px solid var(--border);
+  }
+  .bylaw:last-child{border-bottom:none}
+  .bylaw h3{margin:0 0 4px;font-size:1rem;color:var(--brand)}
+  .bylaw .num{
+    display:inline-block;background:var(--brand);color:#fff;
+    padding:1px 8px;border-radius:4px;font-size:.78rem;margin-right:8px;
+    font-weight:600;
+  }
+  .bylaw p{margin:6px 0;font-size:.94rem}
+
+  /* Fine table */
+  table.fines{
+    width:100%;border-collapse:collapse;margin:12px 0;
+    background:var(--card);
+  }
+  table.fines th,table.fines td{
+    padding:12px 14px;text-align:left;border:1px solid var(--border);
+  }
+  table.fines th{background:var(--brand);color:#fff;font-weight:600}
+  table.fines tr:nth-child(even) td{background:var(--bg)}
+  .fine-amount{font-weight:700;color:var(--accent);font-size:1.1rem}
+
+  /* Process steps */
+  ol.steps{counter-reset:step;list-style:none;padding:0;margin:0}
+  ol.steps li{
+    counter-increment:step;
+    position:relative;padding:14px 16px 14px 56px;
+    background:var(--bg);border-radius:8px;margin-bottom:10px;
+    border-left:4px solid var(--brand);
+  }
+  ol.steps li::before{
+    content:counter(step);
+    position:absolute;left:14px;top:50%;transform:translateY(-50%);
+    background:var(--brand);color:#fff;
+    width:32px;height:32px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:.95rem;
+  }
+  ol.steps li strong{display:block;color:var(--brand);margin-bottom:4px}
+
+  /* Contacts */
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .contact-card{
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:18px 20px;
+  }
+  .contact-card h3{margin:0 0 4px;color:var(--brand);font-size:1.05rem}
+  .contact-card .role{color:var(--muted);font-size:.85rem;margin-bottom:10px}
+  .contact-card a{display:block;margin-top:4px;word-break:break-all}
+
+  /* Footer */
+  footer.site{
+    background:var(--brand-dark);
+    color:#fff;
+    padding:24px 20px;margin-top:32px;
+    text-align:center;font-size:.88rem;
+  }
+  footer.site a{color:var(--accent)}
+  footer.site p{margin:4px 0;opacity:.85}
+
+  /* Highlights / search */
+  .highlight{background:#fff3a3;padding:1px 2px;border-radius:2px}
+  .hidden{display:none !important}
+  .no-results{
+    padding:24px;text-align:center;color:var(--muted);
+    background:var(--card);border-radius:8px;margin:20px 0;
+  }
+
+  /* Notice */
+  .notice{
+    background:#fff8e6;border-left:4px solid var(--accent);
+    padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;
+    font-size:.92rem;
+  }
+
+  /* Standout enhancements */
+  .urgent-banner{
+    background:linear-gradient(90deg,#cc1f1f 0%,#f04228 100%);
+    color:#fff;
+    border-bottom:2px solid rgba(255,255,255,.35);
+  }
+  .urgent-banner-inner{
+    max-width:1200px;margin:0 auto;padding:10px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    font-size:.92rem;
+  }
+  .urgent-pill{
+    display:inline-block;background:#fff;color:#b01414;border-radius:999px;
+    font-size:.72rem;font-weight:800;letter-spacing:.7px;text-transform:uppercase;
+    padding:4px 9px;margin-right:8px;
+  }
+  .urgent-close{
+    border:1px solid rgba(255,255,255,.55);background:transparent;color:#fff;
+    border-radius:6px;padding:6px 10px;cursor:pointer;font-weight:700;
+  }
+
+  .tools-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .tool-btn{
+    border:1px solid var(--border);background:#fff;color:var(--brand-dark);
+    border-radius:999px;padding:6px 10px;font-size:.78rem;font-weight:700;cursor:pointer;
+  }
+  .tool-btn[aria-pressed="true"]{background:var(--brand-dark);color:#fff;border-color:var(--brand-dark)}
+
+  .dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .dash-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px}
+  .dash-card h3{margin:0 0 6px;color:var(--brand);font-size:1rem}
+  .dash-card p{margin:0 0 10px;color:var(--muted);font-size:.88rem}
+  .dash-card a{font-weight:700;font-size:.88rem}
+
+  .assistant-box{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:10px}
+  .assistant-box input{border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:.92rem}
+  .assistant-box button{border:1px solid var(--brand-dark);background:var(--brand-dark);color:#fff;border-radius:8px;padding:10px 14px;font-weight:700;cursor:pointer}
+  .assistant-answer{margin-top:12px;background:#eef3fb;border-left:4px solid var(--brand);padding:10px 12px;border-radius:0 8px 8px 0;font-size:.9rem}
+  .assistant-meta{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+  .assistant-badge{display:inline-block;border-radius:999px;padding:3px 8px;font-size:.72rem;font-weight:800;letter-spacing:.3px}
+  .assistant-intent-policy{background:#dce8ff;color:#0f3e8a;border:1px solid #9cb8ef}
+  .assistant-intent-bylaw{background:#ffe5cc;color:#7a3f00;border:1px solid #efbf8a}
+  .assistant-intent-process{background:#dff3df;color:#1f5a25;border:1px solid #9ed29f}
+  .assistant-confidence-high{background:#d8f4e4;color:#0d5d2f;border:1px solid #8ad3ad}
+  .assistant-confidence-medium{background:#fff3d8;color:#7a5a00;border:1px solid #e7ca7d}
+  .assistant-confidence-low{background:#ffe1e1;color:#7a1d1d;border:1px solid #e3a0a0}
+
+  .sla-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+  .sla-card{background:#f7f9fe;border:1px solid #d8e1f4;border-radius:8px;padding:12px}
+  .sla-card strong{display:block;color:var(--brand);font-size:.8rem;text-transform:uppercase;letter-spacing:.4px}
+
+  .checklist{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+  .checklist li{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px;display:flex;gap:10px;align-items:flex-start}
+  .checklist input{margin-top:2px}
+
+  .calendar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .calendar-item{border:1px solid var(--border);border-radius:10px;padding:12px;background:#fff}
+  .calendar-item .month{font-size:.75rem;font-weight:800;color:var(--brand);text-transform:uppercase;letter-spacing:.5px}
+
+  .decision-list{display:grid;gap:8px}
+  .decision-item{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+
+  .fines-coach{display:grid;gap:10px}
+  .coach-item{background:#fffdf0;border:1px solid #f0e2a0;border-left:4px solid #e0be22;border-radius:8px;padding:10px 12px}
+
+  .print-packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+  .pack{border:1px solid var(--border);background:var(--bg);border-radius:8px;padding:12px}
+
+  .mobile-dock{display:none}
+
+  body.font-lg{font-size:18px}
+  body.font-xl{font-size:20px}
+  body.high-contrast{background:#fff;color:#000}
+  body.high-contrast section.card,body.high-contrast .hero{border:2px solid #000 !important;box-shadow:none !important}
+  body.dyslexia{font-family:Verdana,Tahoma,"Trebuchet MS",sans-serif}
+
+  /* Responsive */
+  @media (max-width: 900px){
+    .layout{grid-template-columns:1fr}
+    nav.toc{position:relative;top:0;max-height:none;display:none}
+    nav.toc.open{display:block}
+    .menu-toggle{display:inline-block}
+    .hero{padding:24px 20px}
+    .hero h1{font-size:1.5rem}
+    section.card{padding:22px 18px}
+    #searchBox{width:160px}
+    .brand-logo{width:48px;height:48px}
+    .brand{font-size:1.05rem}
+    .brand small{font-size:.72rem}
+    .translate-bar-inner{padding:8px 14px;gap:8px}
+    .translate-hint{display:none}
+    .assistant-box{grid-template-columns:1fr}
+    .mobile-dock{
+      position:fixed;left:0;right:0;bottom:0;z-index:120;
+      display:grid;grid-template-columns:repeat(5,1fr);gap:6px;
+      background:rgba(0,33,92,.96);padding:8px 8px calc(8px + env(safe-area-inset-bottom));
+      box-shadow:0 -6px 18px rgba(0,0,0,.22);
+    }
+    .mobile-dock a,.mobile-dock button{
+      border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;border-radius:8px;
+      padding:8px 6px;font-size:.74rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;
+    }
+    footer.site{padding-bottom:82px}
+  }
+
+  /* Print */
+  @media print{
+    header.site,.translate-bar,nav.toc,footer.site,.menu-toggle,#google_translate_element,.search-wrap{display:none !important}
+    .layout{display:block;padding:0;max-width:none}
+    section.card{box-shadow:none;border:none;page-break-inside:avoid}
+    .hero{background:#fff !important;color:#000 !important;border:1px solid #000}
+    details.faq{break-inside:avoid}
+    details.faq:not([open]) summary::after{display:none}
+    details.faq .faq-body{display:block !important}
+    body{background:#fff;font-size:11pt}
+  }
+
+  /* Google Translate cleanup */
+  body{top:0 !important}
+  /* Keep the language dropdown visible; only hide Google top banner frame. */
+  .skiptranslate.goog-te-banner-frame{display:none !important}
+  .goog-te-banner-frame{display:none !important}
+  font[style]{background:transparent !important;box-shadow:none !important}
+
+  /* Common Requests cards */
+  .request-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;
+  }
+  .request-card{
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:18px 18px 16px;
+    background:var(--card);
+    display:flex;flex-direction:column;
+    transition:all .15s;
+  }
+  .request-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:var(--brand-light)}
+  .request-card .ricon{font-size:1.8rem;margin-bottom:6px}
+  .request-card h3{margin:0 0 6px;color:var(--brand);font-size:1.05rem}
+  .request-card p{margin:0 0 14px;font-size:.9rem;color:var(--muted);flex:1}
+  .request-card a.btn{
+    display:inline-block;text-align:center;
+    background:var(--brand);color:#fff;
+    padding:9px 14px;border-radius:6px;
+    font-weight:600;font-size:.92rem;
+    text-decoration:none;
+    transition:background .15s;
+  }
+  .request-card a.btn:hover{background:var(--brand-dark);text-decoration:none}
+  .request-note{
+    background:#eef3fb;border-left:4px solid var(--brand-light);
+    padding:10px 14px;border-radius:0 6px 6px 0;
+    font-size:.88rem;margin:14px 0;color:var(--brand-dark);
+  }
+
+  /* Approval reference table */
+  table.approval{
+    width:100%;border-collapse:collapse;margin:12px 0;
+    background:var(--card);font-size:.93rem;
+  }
+  table.approval th,table.approval td{
+    padding:10px 12px;text-align:left;border:1px solid var(--border);vertical-align:top;
+  }
+  table.approval th{background:var(--brand);color:#fff;font-weight:600;font-size:.88rem}
+  table.approval tr:nth-child(even) td{background:#fafbfd}
+  .badge{
+    display:inline-block;padding:3px 10px;border-radius:14px;
+    font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+    white-space:nowrap;
+  }
+  .badge-yes{background:#fde9c8;color:#7a4a00;border:1px solid #f0c878}
+  .badge-no{background:#dcefdc;color:#22571f;border:1px solid #a4d2a4}
+  .badge-never{background:#fadcdc;color:#7a1f1f;border:1px solid #e6a0a0}
+  .badge-notify{background:#dfe7f5;color:#1d3a6b;border:1px solid #a5bce0}
+
+  /* Meet the Board */
+  .board-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;
+  }
+  .director-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:20px 18px;
+    text-align:center;
+    transition:all .15s;
+  }
+  .director-card:hover{box-shadow:0 4px 14px rgba(0,0,0,.08);border-color:var(--accent)}
+  .director-photo{
+    width:96px;height:96px;border-radius:50%;
+    margin:0 auto 12px;
+    background:linear-gradient(135deg,var(--brand-light),var(--brand));
+    color:#fff;font-size:2.2rem;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    border:3px solid var(--accent);
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+  }
+  .director-card h3{margin:0 0 4px;color:var(--brand);font-size:1.05rem}
+  .director-card .role{
+    display:inline-block;background:var(--accent);color:var(--brand-dark);
+    padding:2px 10px;border-radius:12px;font-size:.78rem;font-weight:700;
+    margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px;
+  }
+  .director-card .bio{font-size:.86rem;color:var(--muted);margin:8px 0 10px;min-height:40px}
+  .director-card a{font-size:.85rem;word-break:break-all}
+  .director-placeholder{opacity:.75;border-style:dashed}
+  .director-placeholder .director-photo{
+    background:#eef1f7;color:var(--muted);border-color:var(--border);
+    font-size:1.6rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner">
+    <div class="brand-block">
+      <div class="brand-logo"><img src="CP1720499.png" alt="Haddow Landing Condominium Corporation 1720499 logo" onerror="this.closest('.brand-logo').classList.add('logo-fallback'); this.remove();"></div>
+      <div class="brand">
+        Haddow Landing
+        <small>Homeowner Handbook · Condominium Corp. 172 0499</small>
+      </div>
+    </div>
+    <div class="header-tools">
+      <div class="search-wrap">
+        <input type="search" id="searchBox" placeholder="Search policies, bylaws, FAQ…" aria-label="Search">
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('nav.toc').classList.toggle('open')">☰ Menu</button>
+    </div>
+  </div>
+</header>
+<div class="translate-bar" role="region" aria-label="Language translation">
+  <div class="translate-bar-inner">
+    <span id="translateLangPill" class="translate-pill notranslate" translate="no" lang="en" aria-label="Current language English">EN</span>
+    <strong>Read this page in your language:</strong>
+    <div id="google_translate_element" title="Select a language"></div>
+    <button type="button" class="translate-reset notranslate" translate="no" lang="en" onclick="resetGoogleTranslate()"><span class="notranslate" translate="no">Back to English</span></button>
+    <span class="translate-hint">Choose any language from the dropdown</span>
+  </div>
+</div>
+
+<div id="urgentBanner" class="urgent-banner" role="region" aria-label="Urgent condo notices">
+  <div class="urgent-banner-inner">
+    <div>
+      <span class="urgent-pill">Urgent Notice</span>
+      Water shutdown test is scheduled for <strong>May 18, 9:00-11:00 AM</strong> (Buildings A-C). Keep taps closed during test window.
+    </div>
+    <button type="button" class="urgent-close" onclick="dismissUrgentBanner()">Dismiss</button>
+  </div>
+</div>
+
+<div class="translate-bar" role="region" aria-label="Accessibility and quick tools" style="border-top:1px solid rgba(0,53,148,.16)">
+  <div class="translate-bar-inner" style="justify-content:flex-start">
+    <strong style="margin-right:6px">Quick tools:</strong>
+    <div class="tools-row">
+      <button type="button" class="tool-btn" id="toolFontMinus" onclick="setFontScale('base')">A-</button>
+      <button type="button" class="tool-btn" id="toolFontPlus" onclick="setFontScale('lg')">A+</button>
+      <button type="button" class="tool-btn" id="toolFontXL" onclick="setFontScale('xl')">A++</button>
+      <button type="button" class="tool-btn" id="toolContrast" aria-pressed="false" onclick="toggleHighContrast()">High Contrast</button>
+      <button type="button" class="tool-btn" id="toolDyslexia" aria-pressed="false" onclick="toggleDyslexia()">Dyslexia Font</button>
+      <button type="button" class="tool-btn" id="toolReadAloud" onclick="readWelcomeAloud()">Read Welcome</button>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">📑 On This Page</div>
+
+    <div class="toc-controls">
+      <button type="button" onclick="document.querySelectorAll('nav.toc details').forEach(d=>d.open=true)">Expand All</button>
+      <button type="button" onclick="document.querySelectorAll('nav.toc details').forEach(d=>d.open=false)">Collapse All</button>
+    </div>
+
+    <details class="toc-group" open>
+      <summary>
+        <span class="toc-icon">🏠</span>
+        <span class="toc-label">Getting Started</span>
+        <span class="toc-chevron">▼</span>
+      </summary>
+      <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#quick-links">Quick Links</a></li>
+        <li><a href="#requests">Common Requests &amp; Forms</a></li>
+        <li><a href="#approvals">What Needs Board Approval?</a></li>
+        <li><a href="#board">Meet the Board</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ul>
+    </details>
+
+    <details class="toc-group">
+      <summary>
+        <span class="toc-icon">📋</span>
+        <span class="toc-label">Policies</span>
+        <span class="toc-chevron">▼</span>
+      </summary>
+      <ul>
+        <li><a href="#policies">All Policies</a></li>
+        <li><a href="#policy-1">1. Parking</a></li>
+        <li><a href="#policy-2">2. Noise</a></li>
+        <li><a href="#policy-3">3. Common Property</a></li>
+        <li><a href="#policy-4">4. Garbage</a></li>
+        <li><a href="#policy-5">5. Balconies &amp; Patios</a></li>
+        <li><a href="#policy-6">6. Window Coverings</a></li>
+        <li><a href="#policy-7">7. Holiday Lights</a></li>
+        <li><a href="#policy-8">8. Air Conditioning</a></li>
+        <li><a href="#policy-9">9. Pets</a></li>
+        <li><a href="#policy-10">10. Insurance</a></li>
+        <li><a href="#policy-11">11. Rental Units</a></li>
+        <li><a href="#policy-12">12. Renovations</a></li>
+      </ul>
+    </details>
+
+    <details class="toc-group">
+      <summary>
+        <span class="toc-icon">⚖️</span>
+        <span class="toc-label">Enforcement</span>
+        <span class="toc-chevron">▼</span>
+      </summary>
+      <ul>
+        <li><a href="#violation-process">Reporting a Violation</a></li>
+        <li><a href="#fines">Fine Schedule</a></li>
+      </ul>
+    </details>
+
+    <details class="toc-group">
+      <summary>
+        <span class="toc-icon">📜</span>
+        <span class="toc-label">Bylaws Reference</span>
+        <span class="toc-chevron">▼</span>
+      </summary>
+      <ul>
+        <li><a href="#bylaws">All Bylaws</a></li>
+        <li><a href="#bylaw-3">Bylaw 3 — Owner Duties</a></li>
+        <li><a href="#bylaw-43">Bylaw 43 — Violations &amp; Fines</a></li>
+        <li><a href="#bylaw-46">Bylaw 46 — Insurance</a></li>
+        <li><a href="#bylaw-47">Bylaw 47 — Common Expenses</a></li>
+        <li><a href="#bylaw-51">Bylaw 51 — Leasing</a></li>
+        <li><a href="#bylaw-62">Bylaw 62 — Use &amp; Occupancy</a></li>
+      </ul>
+    </details>
+
+    <details class="toc-group">
+      <summary>
+        <span class="toc-icon">📞</span>
+        <span class="toc-label">Contacts</span>
+        <span class="toc-chevron">▼</span>
+      </summary>
+      <ul>
+        <li><a href="#contacts">Who to Contact</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="welcome">
+      <h1>Welcome to the Haddow Landing Homeowner Handbook</h1>
+      <p>Your complete guide to living at <strong>2121 Haddow Drive NW, Edmonton, Alberta T6R 0W6</strong>. This handbook brings together the Policies and Bylaws of <strong>Condominium Corporation No. 1720499</strong> in a single place — searchable, translatable, and easy to share.</p>
+      <p style="font-size:.9rem;opacity:.9;margin-top:14px">🌐 Use the gold <strong>Translate</strong> bar at the top of the page to read this handbook in your preferred language (25 languages supported). Use the <strong>Search</strong> box in the header to jump to any topic.</p>
+      <div class="meta">
+        <div><strong>Address</strong>2121 Haddow Drive NW</div>
+        <div><strong>Corporation</strong>No. 172 0499</div>
+        <div><strong>Manager</strong>Riverdale Property Mgmt.</div>
+        <div><strong>Last Updated</strong>November 2025</div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="card" id="quick-links">
+      <h2>Quick Links</h2>
+      <p class="subtitle">The most-asked-about topics. Click any tile to jump straight to the answer.</p>
+      <div class="quick-grid">
+        <a class="quick-link" href="#policy-1"><span class="qicon">🚗</span><div><strong>Parking Rules</strong><span>Visitor stalls, fire lanes</span></div></a>
+        <a class="quick-link" href="#policy-9"><span class="qicon">🐕</span><div><strong>Pets</strong><span>Size limits &amp; rules</span></div></a>
+        <a class="quick-link" href="#policy-12"><span class="qicon">🔨</span><div><strong>Renovations</strong><span>What needs Board approval</span></div></a>
+        <a class="quick-link" href="#policy-11"><span class="qicon">🏠</span><div><strong>Renting Your Unit</strong><span>Tenant requirements</span></div></a>
+        <a class="quick-link" href="#policy-10"><span class="qicon">🛡️</span><div><strong>Insurance</strong><span>Recommended coverage</span></div></a>
+        <a class="quick-link" href="#policy-7"><span class="qicon">🎄</span><div><strong>Holiday Lights</strong><span>Allowed dates</span></div></a>
+        <a class="quick-link" href="#policy-8"><span class="qicon">❄️</span><div><strong>Air Conditioners</strong><span>Installation approval</span></div></a>
+        <a class="quick-link" href="#violation-process"><span class="qicon">📋</span><div><strong>Report a Violation</strong><span>Step-by-step process</span></div></a>
+        <a class="quick-link" href="#fines"><span class="qicon">💵</span><div><strong>Fine Schedule</strong><span>$50 / $100 / $200 / $250</span></div></a>
+        <a class="quick-link" href="#requests"><span class="qicon">📝</span><div><strong>Submit a Request</strong><span>Renos, AC, pets, rentals</span></div></a>
+        <a class="quick-link" href="#approvals"><span class="qicon">✅</span><div><strong>Approval Reference</strong><span>What needs Board sign-off</span></div></a>
+        <a class="quick-link" href="#board"><span class="qicon">👥</span><div><strong>Meet the Board</strong><span>Your elected directors</span></div></a>
+        <a class="quick-link" href="#contacts"><span class="qicon">📞</span><div><strong>Contact the Board</strong><span>Manager &amp; President</span></div></a>
+        <a class="quick-link" href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener"><span class="qicon">⚖️</span><div><strong>Condominium Property Act</strong><span>Alberta legislation ↗</span></div></a>
+      </div>
+    </section>
+
+    <!-- Common Requests / Forms -->
+    <section class="card" id="requests">
+      <h2>Common Requests</h2>
+      <p class="subtitle">One-click forms — each opens a pre-filled email to the Condominium Manager so nothing important is left out. Just review, add your details, and send.</p>
+
+      <div class="request-grid">
+
+        <div class="request-card">
+          <div class="ricon">🔨</div>
+          <h3>Renovation Approval</h3>
+          <p>Required for anything beyond minor cosmetic changes (load-bearing walls, plumbing, electrical, mechanical, layout).</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?cc=bautista.nico@gmail.com&subject=Renovation%20Approval%20Request%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20requesting%20Board%20approval%20for%20the%20following%20renovation%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499).%0A%0AOwner%20Name%3A%20%0AUnit%20%23%3A%20%0APhone%3A%20%0AEmail%3A%20%0A%0ADescription%20of%20work%3A%20%0A%0AStart%20Date%20(planned)%3A%20%0ACompletion%20Date%20(planned)%3A%20%0A%0AContractor%20Name%3A%20%0AContractor%20License%20%23%3A%20%0AContractor%20Insurance%20(WCB%20%2B%20%241M%20General%20Liability%20confirmed)%3A%20Yes%20%2F%20No%0A%0AAttachments%20(please%20include%3A%20rendering%2Fdrawings%20of%20alterations%2C%20any%20permits%2C%20engineer's%20report%20if%20applicable)%3A%20%0A%0AAcknowledgement%3A%20I%20understand%20I%20am%20fully%20responsible%20for%20any%20damage%20to%20common%20property%20and%20that%20all%20debris%20will%20be%20removed%20from%20site%20(not%20placed%20in%20household%20trash%20bins)%20-%20per%20Policy%2012%20and%20Bylaw%203(d).%0A%0AThank%20you%2C%0A">📧 Request via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">❄️</div>
+          <h3>AC Installation Approval</h3>
+          <p>Required before installing any air conditioning unit. Installer must be licensed and carry WCB + $1M liability coverage.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?cc=bautista.nico@gmail.com&subject=AC%20Installation%20Approval%20Request%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20requesting%20Board%20approval%20to%20install%20an%20air%20conditioning%20unit%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499).%0A%0AOwner%20Name%3A%20%0AUnit%20%23%3A%20%0APhone%3A%20%0AEmail%3A%20%0A%0AAC%20Unit%20Make%20%2F%20Model%3A%20%0AProposed%20Installation%20Location%3A%20%0APlanned%20Install%20Date%3A%20%0A%0ALicensed%20Contractor%20Name%3A%20%0AContractor%20License%20%23%3A%20%0AWCB%20Coverage%20Confirmed%3A%20Yes%20%2F%20No%0AGeneral%20Liability%20Insurance%20(min%20%241M)%20Confirmed%3A%20Yes%20%2F%20No%0A%0AI%20understand%20that%20ongoing%20maintenance%2C%20servicing%2C%20and%20any%20repairs%20are%20my%20responsibility%20(Policy%208).%0A%0AThank%20you%2C%0A">📧 Request via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">🐕</div>
+          <h3>Pet Registration</h3>
+          <p>Notify the Manager of pets in your unit. Required for exotic/larger pets that need special Board approval.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?subject=Pet%20Registration%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20registering%20a%20pet%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499).%0A%0AOwner%20Name%3A%20%0AUnit%20%23%3A%20%0APhone%3A%20%0AEmail%3A%20%0A%0APet%20Details%3A%0A-%20Type%20(dog%2Fcat%2Fbird%2Ffish%2Fother)%3A%20%0A-%20Breed%3A%20%0A-%20Name%3A%20%0A-%20Age%3A%20%0A-%20Weight%3A%20%0A-%20Shoulder%20Height%20(dogs%20only%2C%20must%20be%20%E2%89%A416%22)%3A%20%0A-%20Service%20Animal%3F%20(Yes%2FNo%20-%20attach%20certification%20if%20yes)%3A%20%0A%0AI%20confirm%20I%20will%3A%0A-%20Hand-leash%20the%20pet%20at%20all%20times%20on%20Common%20Property%0A-%20Clean%20up%20after%20the%20pet%20immediately%0A-%20Accept%20responsibility%20for%20any%20damage%20to%20Common%20Property%0A%0A(Per%20Policy%209%20and%20Bylaw%2062(b)(ii))%0A%0AThank%20you%2C%0A">📧 Register via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">🏠</div>
+          <h3>Rental / Lease Notification</h3>
+          <p>Required when renting out your unit. Provides tenant contact details to the Manager per Bylaw 51.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?subject=Rental%2FLease%20Notification%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20notifying%20the%20Corporation%20of%20a%20tenancy%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499)%20per%20Bylaw%2051%20and%20Policy%2011.%0A%0AOwner%20(Landlord)%20Details%3A%0A-%20Name%3A%20%0A-%20Unit%20%23%3A%20%0A-%20Phone%3A%20%0A-%20Email%3A%20%0A-%20Mailing%20Address%20(if%20different%20from%20unit)%3A%20%0A%0ATenant%20Details%3A%0A-%20Name(s)%3A%20%0A-%20Phone%3A%20%0A-%20Email%3A%20%0A-%20Emergency%20Contact%20Name%3A%20%0A-%20Emergency%20Contact%20Phone%3A%20%0A-%20Lease%20Start%20Date%3A%20%0A-%20Lease%20End%20Date%3A%20%0A%0AConfirmations%3A%0A-%20Lease%20includes%20clause%20requiring%20tenant%20to%20comply%20with%20Bylaws%20and%20Rules%3A%20Yes%20%2F%20No%0A-%20Tenant%20will%20carry%20full%20contents%2C%20additional%20living%20expense%2C%20and%20%241M%20general%20liability%20coverage%3A%20Yes%20%2F%20No%0A-%20I%20will%20relay%20relevant%20Condominium%20information%20to%20the%20tenant%3A%20Yes%0A%0AThank%20you%2C%0A">📧 Notify via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">📋</div>
+          <h3>Report a Violation</h3>
+          <p>Document a bylaw or policy violation for Board review. The Manager will acknowledge in writing and bring it to the next Board meeting.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?subject=Bylaw%20Violation%20Report%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20reporting%20a%20bylaw%20or%20policy%20violation%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499).%0A%0AReporter%20Details%3A%0A-%20Name%3A%20%0A-%20Unit%20%23%3A%20%0A-%20Phone%3A%20%0A-%20Email%3A%20%0A%0AIncident%20Details%3A%0A-%20Date%20of%20Incident%3A%20%0A-%20Time%20of%20Incident%3A%20%0A-%20Location%3A%20%0A-%20Nature%20of%20the%20Offence%3A%20%0A-%20Specific%20Bylaw%2FPolicy%20Affected%20(if%20known)%3A%20%0A-%20Witnesses%20(if%20any)%3A%20%0A%0ADescription%20of%20what%20happened%3A%0A%0A%0APhotographic%20evidence%20attached%3F%20Yes%20%2F%20No%0A%0A(Per%20the%20Violation%20Reporting%20Process%20-%20Bylaw%2043)%0A%0AThank%20you%2C%0A">📧 Report via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">🛠️</div>
+          <h3>Maintenance Request</h3>
+          <p>Report an issue with Common Property — landscaping, lighting, sidewalks, fences, exterior building elements, etc.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?subject=Maintenance%20Request%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20would%20like%20to%20report%20a%20maintenance%20issue%20on%20Common%20Property%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499).%0A%0AOwner%20Details%3A%0A-%20Name%3A%20%0A-%20Unit%20%23%3A%20%0A-%20Phone%3A%20%0A-%20Email%3A%20%0A%0AIssue%20Details%3A%0A-%20Location%3A%20%0A-%20What%20is%20the%20issue%3F%3A%20%0A-%20When%20did%20you%20first%20notice%20it%3F%3A%20%0A-%20Is%20it%20a%20safety%20concern%3F%20(Yes%2FNo)%3A%20%0A-%20Urgency%20(Routine%20%2F%20Important%20%2F%20Urgent)%3A%20%0A%0APhotos%20attached%3F%20Yes%20%2F%20No%0A%0AThank%20you%2C%0A">📧 Submit via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">📷</div>
+          <h3>Camera / Light Approval</h3>
+          <p>Required before installing doorbell cameras, security lights, motion sensors, or similar devices on communal property.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?cc=bautista.nico@gmail.com&subject=Camera%2FSecurity%20Device%20Approval%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20requesting%20Board%20approval%20to%20install%20the%20following%20device(s)%20on%20communal%20property%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499)%20per%20Policy%203(b).%0A%0AOwner%20Name%3A%20%0AUnit%20%23%3A%20%0APhone%3A%20%0AEmail%3A%20%0A%0ADevice%20Type%20(doorbell%20camera%2C%20security%20light%2C%20motion%20sensor%2C%20other)%3A%20%0AMake%20%2F%20Model%3A%20%0AProposed%20Location(s)%3A%20%0APlanned%20Install%20Date%3A%20%0AInstaller%20(self%20%2F%20contractor%20name)%3A%20%0A%0AAttachments%3A%20device%20photo%2Fspec%2C%20proposed%20location%20photo%0A%0AThank%20you%2C%0A">📧 Request via Email</a>
+        </div>
+
+        <div class="request-card">
+          <div class="ricon">📅</div>
+          <h3>Extended Visitor Parking</h3>
+          <p>Required if you need visitor parking for personal use for more than 72 hours.</p>
+          <a class="btn" href="mailto:nwalji@riverdalepm.ca?subject=Extended%20Visitor%20Parking%20Notice%20-%20Haddow%20Landing&body=Hello%20Nadeem%2C%0A%0AI%20am%20notifying%20the%20Manager%20that%20I%20need%20to%20use%20visitor%20parking%20for%20more%20than%2072%20hours%20at%20Haddow%20Landing%20(Condo%20Corp.%20172%200499)%20per%20Policy%201(d)(ii).%0A%0AOwner%20Name%3A%20%0AUnit%20%23%3A%20%0APhone%3A%20%0AEmail%3A%20%0A%0AVehicle%20Make%20%2F%20Model%3A%20%0ALicense%20Plate%3A%20%0AVisitor%20Stall%20Number%20(if%20known)%3A%20%0AStart%20Date%3A%20%0AExpected%20End%20Date%3A%20%0AReason%3A%20%0A%0AThank%20you%2C%0A">📧 Notify via Email</a>
+        </div>
+
+      </div>
+
+      <div class="request-note">
+        💡 <strong>Tip:</strong> Each button opens your default email program with the right recipient, subject line, and a starter template. Fill in your information and send. Most requests are reviewed at the next scheduled Board meeting; urgent matters can be flagged in the subject line.
+      </div>
+    </section>
+
+    <!-- What Needs Board Approval -->
+    <section class="card" id="approvals">
+      <h2>What Needs Board Approval?</h2>
+      <p class="subtitle">A quick reference so you don't have to hunt through bylaws. Anything marked "Approval Required" should use the matching form in the <a href="#requests">Common Requests</a> section above.</p>
+
+      <table class="approval">
+        <thead>
+          <tr><th style="width:38%">Activity / Change</th><th style="width:22%">Approval Status</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Painting interior walls of your unit</strong></td><td><span class="badge badge-no">No Approval</span></td><td>Cosmetic changes inside the unit do not need approval.</td></tr>
+          <tr><td><strong>Renovations — load-bearing walls, plumbing, electrical, mechanical</strong></td><td><span class="badge badge-yes">Approval Required</span></td><td>Submit rendering, use licensed contractors and proper permits. <em>(Policy 12, Bylaw 3(d))</em></td></tr>
+          <tr><td><strong>Any other alteration / renovation</strong> (beyond minor cosmetic)</td><td><span class="badge badge-yes">Approval Required</span></td><td>Includes flooring, fixtures, layout, structural. <em>(Policy 12)</em></td></tr>
+          <tr><td><strong>Air conditioner installation</strong></td><td><span class="badge badge-yes">Approval Required</span></td><td>Licensed contractor + WCB + $1M liability. <em>(Policy 8)</em></td></tr>
+          <tr><td><strong>Doorbell camera, security light, motion sensor</strong></td><td><span class="badge badge-yes">Approval Required</span></td><td>Anywhere on communal property (pillars, bannisters, exteriors). <em>(Policy 3(b))</em></td></tr>
+          <tr><td><strong>Exterior alterations</strong> (doors, windows, eavestroughs, paint)</td><td><span class="badge badge-yes">Approval Required</span></td><td>Anything that changes the exterior appearance. <em>(Bylaw 62(b)(x))</em></td></tr>
+          <tr><td><strong>Structures on Common Property</strong> (sheds, fences, antennae, satellite dishes)</td><td><span class="badge badge-yes">Approval Required</span></td><td><em>(Bylaw 62(b)(xi))</em></td></tr>
+          <tr><td><strong>Signs / posters / advertising visible from outside</strong></td><td><span class="badge badge-yes">Approval Required</span></td><td><em>(Bylaw 62(b)(vii))</em></td></tr>
+          <tr><td><strong>Work outside permitted hours</strong> (before 8:30 a.m., after 6:00 p.m., weekends, holidays)</td><td><span class="badge badge-yes">Approval Required</span></td><td>Standard hours don't need approval. <em>(Bylaw 62(b)(xix))</em></td></tr>
+          <tr><td><strong>Domesticated pets</strong> (cat, small dog ≤16" shoulder, birds, fish)</td><td><span class="badge badge-notify">Notify Only</span></td><td>Use the Pet Registration form. <em>(Policy 9)</em></td></tr>
+          <tr><td><strong>Exotic / unusual / venomous pets</strong> · Larger or service dogs</td><td><span class="badge badge-yes">Approval Required</span></td><td>Reviewed case-by-case. <em>(Policy 9, Bylaw 62(b)(ii))</em></td></tr>
+          <tr><td><strong>Renting / leasing your unit</strong></td><td><span class="badge badge-notify">Notify Only</span></td><td>Provide tenant contact + lease compliance clause. <em>(Policy 11, Bylaw 51)</em></td></tr>
+          <tr><td><strong>Visitor parking for more than 72 hours</strong> (owner use)</td><td><span class="badge badge-notify">Notify Only</span></td><td>Email the Manager. <em>(Policy 1(d)(ii))</em></td></tr>
+          <tr><td><strong>Holiday lights</strong> (Nov 1 – Mar 1)</td><td><span class="badge badge-no">No Approval</span></td><td>Within the allowed window. Lights off by Feb 1; down by Mar 1. <em>(Policy 7)</em></td></tr>
+          <tr><td><strong>Seasonal/occasion decorations</strong> (3 weeks before / 3 weeks after)</td><td><span class="badge badge-no">No Approval</span></td><td><em>(Policy 7(b))</em></td></tr>
+          <tr><td><strong>Window coverings</strong> (uniform appearance)</td><td><span class="badge badge-no">No Approval</span></td><td>Must blend with building exterior. <em>(Policy 6)</em></td></tr>
+          <tr><td><strong>Reflective window coverings</strong> · <strong>Flags, sheets, foil as window covers</strong></td><td><span class="badge badge-never">Not Permitted</span></td><td><em>(Policy 6, Bylaw 62(b)(ix))</em></td></tr>
+          <tr><td><strong>Solid-fuel BBQ on balcony</strong> (charcoal, wood)</td><td><span class="badge badge-never">Not Permitted</span></td><td>Propane and electric are allowed. <em>(Bylaw 62(b)(xii))</em></td></tr>
+          <tr><td><strong>Recreational use of parking / roadways</strong> (ball games, biking)</td><td><span class="badge badge-never">Not Permitted</span></td><td><em>(Policy 1(b), Bylaw 62(c)(ii))</em></td></tr>
+          <tr><td><strong>Parking in fire lanes</strong> or non-designated areas</td><td><span class="badge badge-never">Not Permitted</span></td><td>Vehicles may be towed. <em>(Policy 1(c), Bylaw 62(c)(iv))</em></td></tr>
+          <tr><td><strong>Hanging laundry visible from outside</strong></td><td><span class="badge badge-never">Not Permitted</span></td><td><em>(Policy 5(b), Bylaw 62(b)(viii))</em></td></tr>
+          <tr><td><strong>Commercial use of unit</strong></td><td><span class="badge badge-never">Not Permitted</span></td><td>Each unit is a private single-family dwelling. <em>(Bylaw 62(a))</em></td></tr>
+          <tr><td><strong>Reporting a violation</strong></td><td><span class="badge badge-notify">Submit Report</span></td><td>Use the Report a Violation form. <em>(Bylaw 43)</em></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Meet the Board -->
+    <section class="card" id="board">
+      <h2>Meet the Board</h2>
+      <p class="subtitle">Your elected volunteer directors of Condominium Corporation No. 1720499. The Board makes decisions on policies, the budget, capital projects, and bylaw enforcement on behalf of all owners.</p>
+
+      <div class="board-intro">
+        <p><strong>How the Board works:</strong> Directors are owners elected at the Annual General Meeting. They serve without pay, meet regularly throughout the year, and rely on <strong>Riverdale Property Management</strong> to handle day-to-day operations. For most issues, please contact the Manager <em>first</em> — the Manager will escalate to the Board when needed.</p>
+        <p style="margin-top:10px"><strong>📅 Annual General Meeting (AGM):</strong> Every owner is invited. This is where directors are elected, the budget is approved, and major decisions are discussed. Watch your email and the front lobby for the notice.</p>
+      </div>
+
+      <div class="board-grid">
+
+        <!-- President -->
+        <div class="director-card">
+          <div class="director-photo director-placeholder">👤</div>
+          <h3>Nico Bautista</h3>
+          <div class="role">President</div>
+          <p class="director-bio">Leads Board meetings, signs official documents, and works closely with the Property Manager on day-to-day governance.</p>
+          <div class="director-contact">
+            <a href="mailto:bautista.nico@gmail.com">✉️ bautista.nico@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Vice President -->
+        <div class="director-card">
+          <div class="director-photo director-placeholder">👤</div>
+          <h3>[Director Name]</h3>
+          <div class="role">Vice President</div>
+          <p class="director-bio">Steps in for the President when needed and supports key initiatives across the corporation.</p>
+          <div class="director-contact">
+            <em>Contact via the Property Manager</em>
+          </div>
+        </div>
+
+        <!-- Treasurer -->
+        <div class="director-card">
+          <div class="director-photo director-placeholder">👤</div>
+          <h3>[Director Name]</h3>
+          <div class="role">Treasurer</div>
+          <p class="director-bio">Oversees the budget, condo fee planning, the reserve fund, and the annual audit.</p>
+          <div class="director-contact">
+            <em>Contact via the Property Manager</em>
+          </div>
+        </div>
+
+        <!-- Secretary -->
+        <div class="director-card">
+          <div class="director-photo director-placeholder">👤</div>
+          <h3>[Director Name]</h3>
+          <div class="role">Secretary</div>
+          <p class="director-bio">Keeps meeting minutes, manages corporate records, and handles official correspondence.</p>
+          <div class="director-contact">
+            <em>Contact via the Property Manager</em>
+          </div>
+        </div>
+
+        <!-- Director-at-Large -->
+        <div class="director-card">
+          <div class="director-photo director-placeholder">👤</div>
+          <h3>[Director Name]</h3>
+          <div class="role">Director-at-Large</div>
+          <p class="director-bio">Contributes to Board decisions and may take the lead on specific committees or projects.</p>
+          <div class="director-contact">
+            <em>Contact via the Property Manager</em>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="board-footer">
+        <h3 style="margin:0 0 8px;font-size:1.05rem;color:var(--brand)">📬 How to reach the Board</h3>
+        <p style="margin:6px 0"><strong>Day-to-day issues</strong> — contact the Property Manager first:<br>
+          <a href="mailto:nwalji@riverdalepm.ca">nwalji@riverdalepm.ca</a></p>
+        <p style="margin:6px 0"><strong>Formal Board matters</strong> — written requests, appeals of fines, or items for the next Board meeting agenda should be emailed to the Property Manager, who will forward to the Board.</p>
+        <p style="margin:6px 0"><strong>Interested in joining the Board?</strong> Speak with any current director or attend the next AGM. New voices are always welcome.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p class="subtitle">Plain-language answers to the questions homeowners ask most often.</p>
+
+      <details class="faq">
+        <summary>Where can I park my vehicle, and where can guests park?</summary>
+        <div class="faq-body">
+          <p>Each owner has designated parking spaces shown on the Corporation's parking plan. Vehicles must stay <strong>within painted lines</strong> — you can't park behind your stall or in front of garages. Visitors must use marked <strong>visitor parking stalls</strong> only, available first-come, first-served.</p>
+          <p>If you (the owner) need to use visitor parking for more than <strong>72 hours</strong>, you must notify the Condominium Manager. Parking in <strong>fire lanes</strong> (behind/between garage doors and on roadways) is strictly prohibited — vehicles may be towed.</p>
+          <span class="ref">See: Policy 1 · Bylaw 62(c)</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I have a dog or cat? Are there size limits?</summary>
+        <div class="faq-body">
+          <p>Yes — <strong>domesticated pets</strong> (cats, dogs, birds, fish, small animals) are allowed. Dogs must be <strong>16 inches or less at the shoulder</strong> when fully grown. Certified service dogs are exempt with Board approval.</p>
+          <p><strong>Not allowed:</strong> exotic, unusual, unknown, or venomous animals (unless specifically approved by the Board).</p>
+          <p>Pets must be <strong>hand-leashed</strong> at all times on common property. Owners must clean up after their pets immediately. Any damage to common property caused by your pet is charged back to you.</p>
+          <span class="ref">See: Policy 9 · Bylaw 62(b)(ii)</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Do I need approval before renovating my unit?</summary>
+        <div class="faq-body">
+          <p><strong>Yes — for most work.</strong> Minor cosmetic changes (e.g., painting walls) do not need approval. Everything else does, including:</p>
+          <ul>
+            <li>Any change to <strong>load-bearing walls, plumbing, mechanical, or electrical systems</strong></li>
+            <li>Any structural, layout, or fixture renovation</li>
+          </ul>
+          <p>Before starting, submit an accurate rendering of the proposed work to the Board for written approval. Use <strong>licensed contractors</strong> with proper permits. An engineer's report may be required for major work. Owners are fully responsible for any damage to common property, and all construction debris must be removed off-site — <strong>not</strong> placed in the household trash bins.</p>
+          <span class="ref">See: Policy 12 · Bylaw 3(d)</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I rent out my unit? What are the requirements?</summary>
+        <div class="faq-body">
+          <p>Yes, owners may lease their units, but you must:</p>
+          <ul>
+            <li>Provide <strong>tenant contact information</strong> (including emergency contacts) to the Condominium Manager</li>
+            <li>Include a clause in the lease requiring the tenant to follow all <strong>Bylaws and Policies</strong></li>
+            <li>Ensure tenants carry <strong>full contents insurance, additional living expense coverage, and up to $1 million general liability</strong></li>
+            <li>As the landlord, you are responsible for relaying all relevant condo information to your tenant</li>
+          </ul>
+          <span class="ref">See: Policy 11 · Bylaw 51</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What insurance do I personally need?</summary>
+        <div class="faq-body">
+          <p>The Corporation insures the building itself, but each owner must carry their <strong>own condominium insurance</strong>. Speak to your broker about:</p>
+          <ul>
+            <li><strong>Personal Property (contents)</strong> — minimum recommended $50,000 for fire, water, windstorm, etc.</li>
+            <li><strong>Improvements &amp; Betterments</strong> — upgrades made by you or previous owners are usually not covered by the Corporation</li>
+            <li><strong>Additional Living Expenses</strong> — enough to live elsewhere for at least <strong>18 months</strong> in case of a total loss</li>
+            <li><strong>Loss Assessment Coverage</strong> — covers your share of any special assessment after an insured loss</li>
+          </ul>
+          <span class="ref">See: Policy 10 · Bylaw 46</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>When are holiday lights allowed?</summary>
+        <div class="faq-body">
+          <p>Holiday decorations may go up <strong>from November 1st</strong> each year and must come down <strong>by March 1st</strong>. Please turn lights off by <strong>February 1st</strong>. For other seasonal occasions (birthdays, cultural holidays, etc.), decorations are permitted up to <strong>3 weeks before</strong> and must come down within <strong>3 weeks after</strong> the occasion.</p>
+          <p>As a courtesy, please turn lights off by <strong>11 p.m.</strong></p>
+          <span class="ref">See: Policy 7</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I install an air conditioner?</summary>
+        <div class="faq-body">
+          <p>Yes, with conditions: installation must be <strong>approved by the Board</strong> in advance, comply with building codes, and be performed by a <strong>licensed contractor</strong> carrying WCB coverage and <strong>at least $1 million general liability insurance</strong>. Ongoing maintenance, servicing, and repair costs are the unit owner's responsibility.</p>
+          <span class="ref">See: Policy 8</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What's the rule on noise?</summary>
+        <div class="faq-body">
+          <p>Any noise that is a nuisance or unreasonably interferes with another resident's use and enjoyment of their unit or the common property is prohibited at any hour. Construction or renovation work is restricted to weekdays between <strong>8:30 a.m. and 6:00 p.m.</strong> — work outside those hours, or on weekends and statutory holidays, requires Board consent.</p>
+          <span class="ref">See: Policy 2 · Bylaw 62(b)(vi)</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What can I put on my balcony or patio?</summary>
+        <div class="faq-body">
+          <p>Balconies and patios must be kept <strong>clean, tidy, and free of clutter, debris, garbage</strong>, or anything that could be a safety hazard. <strong>Hanging laundry or other items</strong> in a way that affects the building's appearance is not permitted.</p>
+          <span class="ref">See: Policy 5 · Bylaw 62(b)(viii)</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I install a doorbell camera or security light?</summary>
+        <div class="faq-body">
+          <p>If you wish to install any device — <strong>security lights, doorbell cameras, motion sensors</strong>, etc. — on communal property (bannisters, pillars, exteriors), you must get <strong>Board approval first</strong>.</p>
+          <span class="ref">See: Policy 3(b)</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>How does garbage and recycling work?</summary>
+        <div class="faq-body">
+          <p>Use the <strong>designated areas</strong> and follow the <a href="https://www.edmonton.ca/programs_services/garbage_waste" target="_blank" rel="noopener">City of Edmonton's waste management guidelines</a>. Don't tamper with or remove items from waste containers. <strong>Large items</strong> (furniture, appliances) and <strong>hazardous materials</strong> must be disposed of off-site at the owner's expense — not left in common areas or trash bins.</p>
+          <span class="ref">See: Policy 4</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What window coverings are allowed?</summary>
+        <div class="faq-body">
+          <p>Window coverings must keep the exterior of the building looking <strong>uniform</strong>. <strong>Reflective coverings</strong> that could disturb neighbouring units' privacy are not allowed. <strong>Flags, bed sheets, aluminum foil</strong> or other improvised coverings visible from outside are not permitted.</p>
+          <span class="ref">See: Policy 6</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>How do I report a bylaw violation?</summary>
+        <div class="faq-body">
+          <p>Document the incident in writing — include the <strong>date, time, location, nature of the offense, photos if you have them</strong>, and any witnesses. Submit it to the <strong>Condominium Manager (Nadeem Walji)</strong> by email or mail. The Manager will acknowledge receipt in writing and bring it to the Board's next meeting. See the <a href="#violation-process">full process</a>.</p>
+          <span class="ref">See: Violation Reporting Process · Bylaw 43</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What happens if I (or a tenant) break a rule?</summary>
+        <div class="faq-body">
+          <p>The Board issues fines on an escalating schedule:</p>
+          <ul>
+            <li><strong>1st offense:</strong> $50 + written warning</li>
+            <li><strong>2nd offense (within 6 months):</strong> $100 + formal notice of violation</li>
+            <li><strong>3rd offense (within 12 months):</strong> $200 + possible hearing</li>
+            <li><strong>Repeated further offenses:</strong> $250 (the maximum allowed under the Bylaws)</li>
+          </ul>
+          <p>Fines are payable within <strong>10–14 days</strong>; interest may be charged on unpaid amounts. Owners have a right to appeal under the Alberta <a href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener"><em>Condominium Property Act</em></a>. See the full <a href="#fines">Fine Schedule</a>.</p>
+          <span class="ref">See: Fine Schedule · Bylaw 43</span>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Who do I contact for what?</summary>
+        <div class="faq-body">
+          <p><strong>Day-to-day questions, maintenance issues, violation reports</strong> → <a href="mailto:nwalji@riverdalepm.ca">Nadeem Walji, Condominium Manager</a> (Riverdale Property Management)</p>
+          <p><strong>Board matters, governance, escalations</strong> → <a href="mailto:bautista.nico@gmail.com">Nico Bautista, Board President</a></p>
+          <p>See the <a href="#contacts">Contacts</a> section for full details.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Policies -->
+    <section class="card" id="policies">
+      <h2>Policies (Full Text)</h2>
+      <p class="subtitle">These policies are reviewed at least once per year. Monetary sanctions may be imposed under Bylaw 43.</p>
+      <div class="notice">
+        <strong>Authority:</strong> Bylaws and Policies are established under the Alberta <a href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener"><em>Condominium Property Act</em></a>. Under <strong>Bylaw 3(e) &amp; (h)</strong>, owners must comply with all bylaws and rules and ensure their tenants, family, visitors, and other occupants do the same. Under <strong>Bylaw 5(j)</strong>, the Board is authorized to make and enforce rules for the use, enjoyment, and safety of the Common Property.
+      </div>
+
+      <div class="policy" id="policy-1">
+        <h3>1. Parking</h3>
+        <ul>
+          <li>Each owner is entitled to their designated parking space per the Corporation's parking plan. Vehicles must be parked <strong>within painted lines</strong>; additional vehicles cannot be parked behind stalls or in front of garages. <em>(Bylaw 62(c)(i))</em></li>
+          <li>Parking units may only be used <strong>for parking vehicles</strong>. Recreational use (playing, ball games, biking, scootering) of parking spaces and roadways is not permitted. <em>(Bylaw 62(c)(ii))</em></li>
+          <li>Owners' vehicles cannot be parked on common property. <strong>Parking in fire lanes</strong> (behind and between garage doors and all roadways) or other non-designated areas is strictly prohibited. <em>(Bylaw 62(c)(iv))</em></li>
+          <li>Visitors may only use designated visitor parking stalls, on a first-come, first-served basis. If an owner needs visitor parking for more than <strong>72 hours</strong>, the Condominium Manager must be notified. <em>(Bylaw 62(c)(v))</em></li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-2">
+        <h3>2. Noise and Disturbances</h3>
+        <ul><li>Noise that is a nuisance or unreasonably interferes with the use and enjoyment of a Unit or Common Property is prohibited. <em>(Bylaw 62(b)(vi))</em></li></ul>
+      </div>
+
+      <div class="policy" id="policy-3">
+        <h3>3. Damage to Common Property</h3>
+        <ul>
+          <li>Owners are responsible for any maintenance, repair, or replacement made necessary by damage caused by themselves or their guests. <em>(Bylaw 43(d))</em></li>
+          <li>Installation of security lights, doorbell cameras, motion sensors, or similar devices on communal property (bannisters, pillars, exteriors, etc.) requires <strong>prior Board approval</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-4">
+        <h3>4. Garbage</h3>
+        <ul>
+          <li>Residents must use designated waste/recycling areas and follow the <a href="https://www.edmonton.ca/programs_services/garbage_waste" target="_blank" rel="noopener">City of Edmonton's waste management guidelines</a>.</li>
+          <li>In accordance with the City of Edmonton Waste Services Bylaw, no person may interfere with, disturb, or remove the contents of a waste container.</li>
+          <li>Large items (furniture) or hazardous materials must be disposed of off-site at the owner's expense — not left in common areas.</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-5">
+        <h3>5. Balcony and Patio Upkeep</h3>
+        <ul>
+          <li>Balconies and patios must be kept clean and free of clutter, debris, garbage, or items that pose a safety hazard or nuisance to other residents.</li>
+          <li>Residents must not hang laundry or other items in a manner that detracts from the building's aesthetic appearance. <em>(Bylaw 62(b)(viii))</em></li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-6">
+        <h3>6. Window Coverings</h3>
+        <ul>
+          <li>Window coverings must be installed and maintained to preserve the uniform appearance of the building's exterior.</li>
+          <li>Reflective coverings that could disrupt the privacy of neighbouring units are not permitted.</li>
+          <li>Flags, bed sheets, aluminum foil, or other materials not intended as window coverings are not permitted when visible from outside.</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-7">
+        <h3>7. Holiday Lights and Decorations</h3>
+        <ul>
+          <li>Holiday decorative lights/decorations may be displayed from <strong>November 1st</strong>; they must be removed no later than <strong>March 1st</strong>, and turned off by <strong>February 1st</strong>.</li>
+          <li>Other seasonal/occasion decorations are permitted within <strong>3 weeks before</strong> and must be removed within <strong>3 weeks after</strong> the occasion.</li>
+          <li>As a courtesy to neighbours, please turn lights off by <strong>11 p.m.</strong></li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-8">
+        <h3>8. Air Conditioning Units</h3>
+        <ul>
+          <li>Installation requires Board approval and must comply with building codes and regulations.</li>
+          <li>Regular maintenance and servicing — including all costs and repairs — is the owner's responsibility.</li>
+          <li>Installation must be performed by a licensed contractor carrying WCB and General Liability Insurance of <strong>at least $1 million</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-9">
+        <h3>9. Pets</h3>
+        <ul>
+          <li>Only domesticated pets (birds, fish, small animals, etc.) are permitted. Exotic, unusual, unknown, or venomous pets are prohibited; exceptions require Board approval after risk review. <em>(Bylaw 62(b)(ii))</em></li>
+          <li>Dogs must not exceed <strong>16 inches at the shoulder</strong> when fully grown, except certified service dogs approved by the Board. <em>(Bylaw 62(b)(ii))</em></li>
+          <li>Owners must clean up after their pets and ensure pets don't disturb residents or damage property. Pets must be <strong>hand-leashed at all times</strong> on common property. <em>(Bylaw 62(b)(ii))</em></li>
+          <li>Damage to common property is charged back to the pet's owner.</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-10">
+        <h3>10. Insurance</h3>
+        <p>Owners must maintain condominium insurance. Discuss the following with your broker (this list is not exhaustive):</p>
+        <ul>
+          <li><strong>Personal Property</strong> — recommended <strong>$50,000</strong> for fire, water, windstorm, etc.</li>
+          <li><strong>Improvements and Betterments</strong> — the Corporation typically does not cover improvements made by current or previous owners (unless required by the Bylaws).</li>
+          <li><strong>Additional Living Expenses</strong> — coverage to live elsewhere if your unit becomes uninhabitable. Rule of thumb: enough for <strong>18 months</strong> in the event of a total loss.</li>
+          <li><strong>Loss Assessment Coverage</strong> — covers your share of any special assessment to make up a shortfall between damage and the Corporation's insurance limit (insured loss only).</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-11">
+        <h3>11. Rental Units</h3>
+        <ul>
+          <li>All leased/rental units must comply with the Corporation's Bylaws and Policies. <em>(Bylaw 51)</em></li>
+          <li>Owners renting out must provide tenant contact details and emergency contacts to the Condominium Manager.</li>
+          <li>Rental agreements must include a clause requiring tenants to abide by the Bylaws and Rules. The landlord is responsible for relaying relevant condo information to the tenant.</li>
+          <li>Tenants should have full replacement contents (personal property) coverage, additional living expense coverage, and general liability up to <strong>$1 million</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="policy" id="policy-12">
+        <h3>12. Renovations</h3>
+        <ul>
+          <li>Load-bearing walls and plumbing, mechanical, or electrical systems may not be altered without Board consent. <em>(Bylaw 3(d))</em></li>
+          <li>All alterations/renovations (except minor cosmetic changes like wall painting) require <strong>Board approval before commencement</strong>; submit an accurate rendering of the proposed work.</li>
+          <li>Proper permits and licensed contractors must be used. An engineer's report may be required for extensive changes.</li>
+          <li>Unit owners are fully responsible for any damage to common property caused by alterations/renovations. <strong>All debris must be removed</strong> from the site by the owner — not placed in the household trash bins.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Violation Process -->
+    <section class="card" id="violation-process">
+      <h2>Reporting a Bylaw Violation</h2>
+      <p class="subtitle">A clear, fair, and transparent process for residents to raise concerns and have them reviewed by the Board.</p>
+      <ol class="steps">
+        <li><strong>Document the offense in writing.</strong> Note the date, time, location, nature of the issue, photographic evidence if available, and any witnesses present.</li>
+        <li><strong>Submit the written report.</strong> Send to the Condominium Manager — by email or physical mail — depending on their preference.</li>
+        <li><strong>Receive written acknowledgement.</strong> The Manager (or their designate) will confirm receipt in writing, including the date received and assurance the Board will review.</li>
+        <li><strong>Board review.</strong> The Manager presents the report at the next scheduled Board meeting (or a specially convened meeting if urgent). The Board reviews, gathers additional information if needed, and discusses possible actions.</li>
+        <li><strong>Decision making.</strong> The Board decides on the appropriate course of action: warning, fine, or other corrective measures under the Bylaws.</li>
+        <li><strong>Decision communicated.</strong> The Manager communicates the decision to the reporting resident and any relevant parties, including any sanctions imposed and timelines for compliance.</li>
+        <li><strong>Follow-up and monitoring.</strong> The Board may track compliance and address recurring issues.</li>
+      </ol>
+    </section>
+
+    <!-- Fines -->
+    <section class="card" id="fines">
+      <h2>Monetary Fine Schedule</h2>
+      <p class="subtitle">Escalating fines for repeated offenses, in accordance with Bylaw 43.</p>
+      <table class="fines">
+        <thead><tr><th>Offense</th><th>Fine</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>1st offense</td><td class="fine-amount">$50</td><td>Written warning from the Board or Manager. Outlines the offense, consequences of repeated violations, and timeframe for compliance.</td></tr>
+          <tr><td>2nd offense<br><small>(within 6 months of the 1st)</small></td><td class="fine-amount">$100</td><td>Formal notice of violation. Details both offenses and the consequences of continued violations.</td></tr>
+          <tr><td>3rd offense<br><small>(within 12 months of the 1st)</small></td><td class="fine-amount">$200</td><td>May include a hearing with the Condominium Board to discuss repeated violations and potential disciplinary action.</td></tr>
+          <tr><td>Further offenses</td><td class="fine-amount">$250 (max)</td><td>Maximum amount under the Bylaws. <em>(Bylaw 43(d))</em></td></tr>
+        </tbody>
+      </table>
+      <div class="notice">
+        <strong>Payment &amp; appeal:</strong> Fines should be paid within <strong>10–14 days</strong>. Interest can be charged until payment is received <em>(Bylaw 43(a))</em>. Residents have the right to appeal any fine or disciplinary action — the appeal process is set out in the Alberta <a href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener"><em>Condominium Property Act</em></a>.
+      </div>
+    </section>
+
+    <!-- Bylaws -->
+    <section class="card" id="bylaws">
+      <h2>Bylaws Reference</h2>
+      <p class="subtitle">Summary of the 64 bylaws enacted by Condominium Corporation No. 1720499 on February 16, 2017 (Alberta Land Titles document 172058032). For the full legal text, request a copy from the Condominium Manager.</p>
+
+      <div class="bylaw" id="bylaw-1"><h3><span class="num">Bylaw 1</span>Definitions</h3><p>Defines key terms used throughout the bylaws: "Act" (the Alberta <em>Condominium Property Act</em>), "Board," "Common Property," "Corporation," "Owner," "Unit," "Unit Factor," and related terms.</p></div>
+
+      <div class="bylaw" id="bylaw-2"><h3><span class="num">Bylaw 2</span>Application</h3><p>The bylaws apply to all owners, occupants, tenants, visitors, invitees, and their guests.</p></div>
+
+      <div class="bylaw" id="bylaw-3"><h3><span class="num">Bylaw 3</span>Duties of Owners</h3><p>Owners must: (a) keep their Unit in good repair; (b) permit reasonable access to the Corporation for inspections/repairs; (c) not use the Unit in a way that interferes with others; (d) not alter load-bearing walls or plumbing, mechanical, or electrical systems without Board consent; (e) use and enjoy Common Property in accordance with the Bylaws and Rules; (f) pay all assessments and contributions when due; (g) notify the Corporation of changes of ownership/occupancy; (h) comply strictly with the Bylaws and Rules and ensure tenants, family, visitors, invitees, and other occupants do the same.</p></div>
+
+      <div class="bylaw" id="bylaw-4"><h3><span class="num">Bylaw 4</span>Duties of the Corporation</h3><p>The Corporation shall control, manage, and administer the Common Property; maintain and repair Common Property; comply with notices and orders from authorities; and enforce the Bylaws.</p></div>
+
+      <div class="bylaw" id="bylaw-5"><h3><span class="num">Bylaw 5</span>Powers of the Corporation</h3><p>The Corporation may, through its Board: (a) employ agents and servants; (b) make contracts; (c) acquire personal property; (d) borrow money; (e) invest funds; (f) commence/defend legal actions; (g) settle disputes; (h) levy assessments; (i) enter Units in emergencies; (j) make rules and regulations for the use, enjoyment, and safety of Common Property and enforce them, including action under Section 36 of the Act.</p></div>
+
+      <div class="bylaw" id="bylaw-6"><h3><span class="num">Bylaw 6</span>The Board</h3><p>The affairs of the Corporation shall be managed by a Board of Directors elected at general meetings.</p></div>
+
+      <div class="bylaw" id="bylaw-7"><h3><span class="num">Bylaw 7</span>Number of Directors</h3><p>The Board shall consist of a minimum and maximum number of directors as set out in the bylaws.</p></div>
+
+      <div class="bylaw" id="bylaw-8"><h3><span class="num">Bylaw 8</span>Election of Directors</h3><p>Directors are elected by ordinary resolution at the Annual General Meeting.</p></div>
+
+      <div class="bylaw" id="bylaw-9"><h3><span class="num">Bylaw 9</span>Eligibility</h3><p>Owners (and certain authorized representatives) are eligible for election to the Board.</p></div>
+
+      <div class="bylaw" id="bylaw-10"><h3><span class="num">Bylaw 10</span>Term of Office</h3><p>Directors hold office until the next AGM or until their successors are elected.</p></div>
+
+      <div class="bylaw" id="bylaw-11"><h3><span class="num">Bylaw 11</span>Vacation of Office</h3><p>A director's office becomes vacant on death, resignation, bankruptcy, ceasing to be eligible, or removal by special resolution.</p></div>
+
+      <div class="bylaw" id="bylaw-12"><h3><span class="num">Bylaw 12</span>Removal of Directors</h3><p>Directors may be removed by special resolution of the owners.</p></div>
+
+      <div class="bylaw" id="bylaw-13"><h3><span class="num">Bylaw 13</span>Filling Vacancies</h3><p>Vacancies may be filled by the remaining directors until the next general meeting.</p></div>
+
+      <div class="bylaw" id="bylaw-14"><h3><span class="num">Bylaw 14</span>Officers</h3><p>The Board shall elect from among its members a Chairperson, Vice-Chair, Secretary, and Treasurer (or combine these roles).</p></div>
+
+      <div class="bylaw" id="bylaw-15"><h3><span class="num">Bylaw 15</span>Powers of the Board</h3><p>The Board exercises all powers of the Corporation except those reserved to the owners.</p></div>
+
+      <div class="bylaw" id="bylaw-16"><h3><span class="num">Bylaw 16</span>Board Meetings</h3><p>Procedures for calling, holding, and conducting Board meetings.</p></div>
+
+      <div class="bylaw" id="bylaw-17"><h3><span class="num">Bylaw 17</span>Quorum</h3><p>The quorum for Board meetings is a majority of the directors then in office.</p></div>
+
+      <div class="bylaw" id="bylaw-18"><h3><span class="num">Bylaw 18</span>Voting at Board Meetings</h3><p>Each director has one vote; the Chair has a casting vote in the event of a tie.</p></div>
+
+      <div class="bylaw" id="bylaw-19"><h3><span class="num">Bylaw 19</span>Resolutions in Writing</h3><p>A resolution signed by all directors is as valid as one passed at a duly convened meeting.</p></div>
+
+      <div class="bylaw" id="bylaw-20"><h3><span class="num">Bylaw 20</span>Indemnification of Directors</h3><p>Directors are indemnified by the Corporation for acts done in good faith in the discharge of their duties.</p></div>
+
+      <div class="bylaw" id="bylaw-21"><h3><span class="num">Bylaw 21</span>Remuneration</h3><p>Directors may be reimbursed for reasonable expenses; remuneration requires approval at a general meeting.</p></div>
+
+      <div class="bylaw" id="bylaw-22"><h3><span class="num">Bylaw 22</span>Delegation</h3><p>The Board may delegate any of its powers to committees or to the Condominium Manager.</p></div>
+
+      <div class="bylaw" id="bylaw-23"><h3><span class="num">Bylaw 23</span>Annual General Meeting</h3><p>An AGM must be held each year within the period required by the Act.</p></div>
+
+      <div class="bylaw" id="bylaw-24"><h3><span class="num">Bylaw 24</span>Special General Meetings</h3><p>The Board may call special general meetings; owners holding 15% of unit factors may requisition one.</p></div>
+
+      <div class="bylaw" id="bylaw-25"><h3><span class="num">Bylaw 25</span>Notice of Meetings</h3><p>Written notice of general meetings must be given at least 14 days in advance, stating the date, time, place, and business to be transacted.</p></div>
+
+      <div class="bylaw" id="bylaw-26"><h3><span class="num">Bylaw 26</span>Quorum at General Meetings</h3><p>The quorum is owners (in person or by proxy) representing not less than 25% of unit factors.</p></div>
+
+      <div class="bylaw" id="bylaw-27"><h3><span class="num">Bylaw 27</span>Chair of General Meetings</h3><p>The Chair of the Board (or another director designated by the Board) chairs general meetings.</p></div>
+
+      <div class="bylaw" id="bylaw-28"><h3><span class="num">Bylaw 28</span>Adjournment</h3><p>A meeting may be adjourned if a quorum is not present within 30 minutes.</p></div>
+
+      <div class="bylaw" id="bylaw-29"><h3><span class="num">Bylaw 29</span>Voting at General Meetings</h3><p>Each owner has voting rights equal to their unit factor. Voting may be by show of hands or by poll.</p></div>
+
+      <div class="bylaw" id="bylaw-30"><h3><span class="num">Bylaw 30</span>Joint Owners</h3><p>Joint owners must agree on a single representative to vote; otherwise the vote is not counted.</p></div>
+
+      <div class="bylaw" id="bylaw-31"><h3><span class="num">Bylaw 31</span>Proxies</h3><p>An owner may vote by proxy. A proxy must be in writing, signed, and delivered to the Corporation before the meeting.</p></div>
+
+      <div class="bylaw" id="bylaw-32"><h3><span class="num">Bylaw 32</span>Ordinary Resolutions</h3><p>Pass by a simple majority of unit factors represented and voting.</p></div>
+
+      <div class="bylaw" id="bylaw-33"><h3><span class="num">Bylaw 33</span>Special Resolutions</h3><p>Require a 75% majority of unit factors and a 75% majority of owners present and voting.</p></div>
+
+      <div class="bylaw" id="bylaw-34"><h3><span class="num">Bylaw 34</span>Unanimous Resolutions</h3><p>Require the consent of all owners.</p></div>
+
+      <div class="bylaw" id="bylaw-35"><h3><span class="num">Bylaw 35</span>Minutes</h3><p>The Corporation shall keep minutes of all general meetings and Board meetings.</p></div>
+
+      <div class="bylaw" id="bylaw-36"><h3><span class="num">Bylaw 36</span>Books and Records</h3><p>The Corporation shall keep proper books of account and records; owners have inspection rights as set out in the Act.</p></div>
+
+      <div class="bylaw" id="bylaw-37"><h3><span class="num">Bylaw 37</span>Auditor</h3><p>An auditor may be appointed each year at the AGM.</p></div>
+
+      <div class="bylaw" id="bylaw-38"><h3><span class="num">Bylaw 38</span>Financial Year</h3><p>The financial year of the Corporation is set by the Board.</p></div>
+
+      <div class="bylaw" id="bylaw-39"><h3><span class="num">Bylaw 39</span>Banking</h3><p>The Board may open and operate bank accounts on behalf of the Corporation.</p></div>
+
+      <div class="bylaw" id="bylaw-40"><h3><span class="num">Bylaw 40</span>Cheques</h3><p>Cheques and negotiable instruments are signed by such officers/directors as the Board designates.</p></div>
+
+      <div class="bylaw" id="bylaw-41"><h3><span class="num">Bylaw 41</span>Reserve Fund</h3><p>The Corporation shall establish and maintain a reserve fund in accordance with the Act.</p></div>
+
+      <div class="bylaw" id="bylaw-42"><h3><span class="num">Bylaw 42</span>Reserve Fund Study</h3><p>A reserve fund study must be conducted in accordance with the Act and the regulations.</p></div>
+
+      <div class="bylaw" id="bylaw-43"><h3><span class="num">Bylaw 43</span>Violations and Fines</h3><p>Where an owner, tenant, visitor, or invitee breaches any Bylaw, Rule, or Regulation, the Corporation may: <strong>(a)</strong> impose a monetary penalty and charge interest on unpaid amounts; <strong>(b)</strong> issue warnings and notices of violation; <strong>(c)</strong> recover from the offending owner all costs of enforcement, including legal fees on a solicitor-and-client basis; <strong>(d)</strong> charge back the cost of repair/replacement of any damage caused, plus a maximum fine of <strong>$250 per offense</strong>. All amounts owing become part of the contribution levied against the owner's unit.</p></div>
+
+      <div class="bylaw" id="bylaw-44"><h3><span class="num">Bylaw 44</span>Phasing</h3><p>Provisions relating to the addition of phases to the Condominium Plan, if applicable.</p></div>
+
+      <div class="bylaw" id="bylaw-45"><h3><span class="num">Bylaw 45</span>Damage and Destruction</h3><p>Procedures following substantial damage or destruction of the buildings, including the application of insurance proceeds and any required owner approvals.</p></div>
+
+      <div class="bylaw" id="bylaw-46"><h3><span class="num">Bylaw 46</span>Insurance</h3><p>The Corporation shall maintain insurance against fire and other perils on all buildings and improvements, comprehensive general liability of <strong>not less than $2,000,000</strong>, directors' and officers' liability insurance, and any other insurance required by the Act or considered prudent. The Corporation's insurance does not cover owners' personal property, improvements/betterments inside units, or owners' personal liability — owners must carry their own coverage.</p></div>
+
+      <div class="bylaw" id="bylaw-47"><h3><span class="num">Bylaw 47</span>Common Expenses and Assessments</h3><p>The Board shall prepare an annual budget and levy contributions on each unit in proportion to its unit factor. Contributions are payable on the date(s) determined by the Board (typically monthly). Owners are liable to pay all contributions and assessments levied against their units.</p></div>
+
+      <div class="bylaw" id="bylaw-48"><h3><span class="num">Bylaw 48</span>Special Assessments</h3><p>The Board may levy special assessments to meet expenses not covered by the annual budget.</p></div>
+
+      <div class="bylaw" id="bylaw-49"><h3><span class="num">Bylaw 49</span>Default in Payment</h3><p>Where an owner is in default of any contribution or assessment, the Corporation may charge interest, register a caveat on title, and take legal action to recover amounts owing (including solicitor-and-client costs).</p></div>
+
+      <div class="bylaw" id="bylaw-50"><h3><span class="num">Bylaw 50</span>Estoppel Certificate</h3><p>The Corporation will provide an estoppel certificate (status certificate) in accordance with the Act on request, setting out outstanding amounts owing on a unit.</p></div>
+
+      <div class="bylaw" id="bylaw-51"><h3><span class="num">Bylaw 51</span>Leasing of Units</h3><p>Owners who lease their unit must: notify the Corporation in writing of the tenancy and provide tenant contact information; ensure the lease incorporates these Bylaws and Rules; and remain responsible for their tenant's compliance. Owners may be charged back for any fines or costs arising from tenant breaches.</p></div>
+
+      <div class="bylaw" id="bylaw-52"><h3><span class="num">Bylaw 52</span>Severability</h3><p>If any provision of these Bylaws is held invalid, the remainder shall continue in full force.</p></div>
+
+      <div class="bylaw" id="bylaw-53"><h3><span class="num">Bylaw 53</span>Notices</h3><p>Notices may be given in writing and delivered personally, by mail, by fax, or by email to the address most recently provided to the Corporation.</p></div>
+
+      <div class="bylaw" id="bylaw-54"><h3><span class="num">Bylaw 54</span>Service on the Corporation</h3><p>Notices to the Corporation must be delivered to its registered address.</p></div>
+
+      <div class="bylaw" id="bylaw-55"><h3><span class="num">Bylaw 55</span>Waiver</h3><p>A failure to enforce any Bylaw on one occasion does not constitute a waiver of the right to enforce it on any future occasion.</p></div>
+
+      <div class="bylaw" id="bylaw-56"><h3><span class="num">Bylaw 56</span>Conflict</h3><p>Where these Bylaws conflict with the Act, the Act prevails.</p></div>
+
+      <div class="bylaw" id="bylaw-57"><h3><span class="num">Bylaw 57</span>Headings</h3><p>Headings are for convenience only and do not affect interpretation.</p></div>
+
+      <div class="bylaw" id="bylaw-58"><h3><span class="num">Bylaw 58</span>Gender and Number</h3><p>Words importing the singular include the plural and vice versa; words importing a gender include all genders.</p></div>
+
+      <div class="bylaw" id="bylaw-59"><h3><span class="num">Bylaw 59</span>Common Seal</h3><p>The common seal of the Corporation is kept in the custody of the Secretary and is affixed under Board authority.</p></div>
+
+      <div class="bylaw" id="bylaw-60"><h3><span class="num">Bylaw 60</span>Execution of Documents</h3><p>Documents executed by the Corporation are signed by two officers or in such other manner as the Board directs.</p></div>
+
+      <div class="bylaw" id="bylaw-61"><h3><span class="num">Bylaw 61</span>Rules</h3><p>The Board may make and amend rules consistent with the Bylaws regarding the use, enjoyment, and safety of the Common Property, and such rules are binding on all owners and occupants.</p></div>
+
+      <div class="bylaw" id="bylaw-62">
+        <h3><span class="num">Bylaw 62</span>Use and Occupancy Restrictions</h3>
+        <p>Owners and occupants must comply with the following restrictions on use of Units and Common Property:</p>
+        <ul style="margin-top:8px">
+          <li><strong>(a)</strong> Each Unit shall be used as a private single-family dwelling and for no other purpose; no business or commercial use is permitted.</li>
+          <li><strong>(b)(i)</strong> No occupant shall do anything in a Unit or on Common Property which is illegal, dangerous, or which would increase insurance premiums.</li>
+          <li><strong>(b)(ii)</strong> <strong>Pets:</strong> Only domesticated pets permitted; dogs must be ≤ 16 inches at the shoulder when fully grown (except certified service dogs); pets must be hand-leashed on Common Property; owners are responsible for cleanup and any damage.</li>
+          <li><strong>(b)(iii)</strong> Maximum of six (6) occupants per Unit.</li>
+          <li><strong>(b)(iv)</strong> No noxious, offensive, or illegal activity is permitted.</li>
+          <li><strong>(b)(v)</strong> Owners shall not store flammable or hazardous materials in their Unit or on Common Property.</li>
+          <li><strong>(b)(vi)</strong> <strong>Noise:</strong> No noise that is a nuisance or that unreasonably interferes with another resident's enjoyment is permitted at any time.</li>
+          <li><strong>(b)(vii)</strong> No signs, posters, or advertising visible from outside a Unit without Board consent.</li>
+          <li><strong>(b)(viii)</strong> <strong>Laundry:</strong> No laundry or other items shall be hung where visible from outside.</li>
+          <li><strong>(b)(ix)</strong> Window coverings must be of a uniform appearance; no flags, sheets, or improvised coverings visible from outside.</li>
+          <li><strong>(b)(x)</strong> No alteration of the exterior of a Unit (including doors, windows, eavestroughs, paint) without Board consent.</li>
+          <li><strong>(b)(xi)</strong> No structures (sheds, fences, antennae, satellite dishes) may be erected on Common Property without Board consent.</li>
+          <li><strong>(b)(xii)</strong> No barbecues using solid fuel (charcoal, wood) on balconies; only propane or electric appliances permitted, in accordance with applicable codes.</li>
+          <li><strong>(b)(xiii)</strong> Garbage and recycling must be placed in designated areas only.</li>
+          <li><strong>(b)(xiv)</strong> No littering or accumulation of debris on Common Property.</li>
+          <li><strong>(b)(xv)</strong> Children must be supervised on Common Property.</li>
+          <li><strong>(b)(xvi)</strong> Smoking restrictions as set out by the Board.</li>
+          <li><strong>(b)(xvii)</strong> No use of the Common Property in a way that interferes with others' enjoyment.</li>
+          <li><strong>(b)(xviii)</strong> Owners must comply with all municipal, provincial, and federal laws.</li>
+          <li><strong>(b)(xix)</strong> Construction/renovation work is permitted only during weekday business hours (typically <strong>8:30 a.m. – 6:00 p.m.</strong>); no work before 8:30 a.m., after 6:00 p.m., or on weekends/statutory holidays without Board consent.</li>
+          <li><strong>(b)(xx)–(xxvii)</strong> Additional restrictions including landscape modifications, exterior storage, vehicle repair, etc. — Board consent required.</li>
+          <li><strong>(c) Parking:</strong>
+            <ul>
+              <li><strong>(c)(i)</strong> Vehicles must be parked within owner's designated parking space, inside painted lines; no parking behind stalls or in front of garages.</li>
+              <li><strong>(c)(ii)</strong> Parking units to be used for vehicles only — no recreational use of parking areas/roadways.</li>
+              <li><strong>(c)(iii)</strong> Vehicles must be licensed, insured, and operational; no derelict or commercial vehicles.</li>
+              <li><strong>(c)(iv)</strong> No parking on Common Property, in fire lanes, or in undesignated areas; offending vehicles may be towed at the owner's expense.</li>
+              <li><strong>(c)(v)</strong> Visitor parking stalls are for visitors only, first-come first-served; owners using them for &gt; 72 hours must notify the Manager.</li>
+              <li><strong>(c)(vi)</strong> Vehicle repair (other than minor emergency repair) is not permitted on the property.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bylaw" id="bylaw-63"><h3><span class="num">Bylaw 63</span>Private Fire Hydrants</h3><p>Private fire hydrants on the property shall be inspected, tested, and maintained in accordance with the <strong>Alberta Fire Code 2006</strong> and <strong>NFPA 25</strong> (Standard for the Inspection, Testing, and Maintenance of Water-Based Fire Protection Systems). The Corporation is responsible for ensuring these requirements are met.</p></div>
+
+      <div class="bylaw" id="bylaw-64"><h3><span class="num">Bylaw 64</span>Amendment of Bylaws</h3><p>These Bylaws may be amended, repealed, or replaced only by <strong>special resolution</strong> (75% of unit factors and 75% of owners present and voting). Amendments take effect once registered at the Alberta Land Titles Office.</p></div>
+
+      <p style="margin-top:18px;font-size:.85rem;color:var(--muted)"><em>Enacted February 16, 2017 · Registered at the Alberta Land Titles Office as document <strong>172058032</strong>. These Bylaws are made under the Alberta <a href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener"><em>Condominium Property Act</em></a>, R.S.A. 2000, c. C-22.</em></p>
+    </section>
+
+    <!-- Contacts -->
+    <section class="card" id="contacts">
+      <h2>Contacts</h2>
+      <p class="subtitle">Who to reach for what.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Nadeem Walji</h3>
+          <div class="role">Condominium Manager · Riverdale Property Management</div>
+          <p style="margin:8px 0;font-size:.92rem">First point of contact for day-to-day questions, maintenance issues, parking, violation reports, and general inquiries.</p>
+          <a href="mailto:nwalji@riverdalepm.ca">nwalji@riverdalepm.ca</a>
+        </div>
+        <div class="contact-card">
+          <h3>Nico Bautista</h3>
+          <div class="role">Board President</div>
+          <p style="margin:8px 0;font-size:.92rem">For Board matters, governance questions, and escalations.</p>
+          <a href="mailto:bautista.nico@gmail.com">bautista.nico@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <h3>Condominium Property Act</h3>
+          <div class="role">Government of Alberta · Legislation</div>
+          <p style="margin:8px 0;font-size:.92rem">The provincial legislation that governs all condominium corporations in Alberta, including this one. Useful if you'd like to read the legal framework behind our Bylaws.</p>
+          <a href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener">open.alberta.ca/publications/c22</a>
+        </div>
+        <div class="contact-card">
+          <h3>Property Information</h3>
+          <div class="role">Public listing</div>
+          <p style="margin:8px 0;font-size:.92rem">Background and property details for Haddow Landing.</p>
+          <a href="https://www.livabl.com/edmonton-ab/haddow-landing" target="_blank" rel="noopener">livabl.com/edmonton-ab/haddow-landing</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="dashboard">
+      <h2>Resident Dashboard</h2>
+      <p class="subtitle">Choose your role to see your top actions instantly.</p>
+      <div class="tools-row" style="margin-bottom:12px">
+        <button type="button" class="tool-btn" onclick="filterDashboard('all')" aria-pressed="true" id="dashAll">All</button>
+        <button type="button" class="tool-btn" onclick="filterDashboard('owner')" id="dashOwner">Owner</button>
+        <button type="button" class="tool-btn" onclick="filterDashboard('tenant')" id="dashTenant">Tenant</button>
+        <button type="button" class="tool-btn" onclick="filterDashboard('board')" id="dashBoard">Board</button>
+      </div>
+      <div class="dashboard-grid" id="dashboardGrid">
+        <article class="dash-card" data-role="owner">
+          <h3>Submit Renovation</h3>
+          <p>Get Board sign-off before starting structural, electrical, or plumbing work.</p>
+          <a href="#requests">Open request form</a>
+        </article>
+        <article class="dash-card" data-role="owner tenant">
+          <h3>Report Maintenance</h3>
+          <p>Lighting, sidewalks, landscaping, and exterior common-property issues.</p>
+          <a href="#requests">Submit maintenance request</a>
+        </article>
+        <article class="dash-card" data-role="tenant owner">
+          <h3>Parking &amp; Fire Lane Rules</h3>
+          <p>Avoid tickets and towing with a 60-second parking refresher.</p>
+          <a href="#policy-1">Review parking rules</a>
+        </article>
+        <article class="dash-card" data-role="board">
+          <h3>Board Agenda Intake</h3>
+          <p>Compile owner submissions and unresolved items for next Board meeting.</p>
+          <a href="#transparency">Open transparency center</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="assistant">
+      <h2>Smart Policy Assistant</h2>
+      <p class="subtitle">Ask in plain language and jump to the right bylaw/policy section.</p>
+      <div class="assistant-box">
+        <input id="assistantInput" type="text" placeholder="Example: Can I install AC?" aria-label="Ask policy assistant">
+        <button type="button" onclick="runPolicyAssistant()">Get Answer</button>
+      </div>
+      <div class="assistant-answer" id="assistantAnswer">Try asking about pets, parking, renovations, holiday lights, rentals, or insurance.</div>
+    </section>
+
+    <section class="card" id="status-tracker">
+      <h2>Request Status Tracker</h2>
+      <p class="subtitle">Track your submitted request with a reference ID.</p>
+      <div class="assistant-box">
+        <input id="statusRef" type="text" placeholder="Enter reference (example: HL-2026-0142)" aria-label="Request reference number">
+        <button type="button" onclick="lookupStatus()">Check Status</button>
+      </div>
+      <div class="assistant-answer" id="statusAnswer">Demo references: <strong>HL-2026-0142</strong>, <strong>HL-2026-0147</strong>, <strong>HL-2026-0150</strong>.</div>
+    </section>
+
+    <section class="card" id="onboarding">
+      <h2>New Resident 5-Step Onboarding</h2>
+      <p class="subtitle">Complete this once and you are fully set up.</p>
+      <ul class="checklist" id="onboardingChecklist">
+        <li><input type="checkbox" data-key="welcome-1"> <div><strong>Save key contacts</strong><br><span style="color:var(--muted)">Add Manager and Board President email addresses.</span></div></li>
+        <li><input type="checkbox" data-key="welcome-2"> <div><strong>Review parking and fire lane rules</strong><br><span style="color:var(--muted)">Confirm where guests can park and 72-hour visitor rules.</span></div></li>
+        <li><input type="checkbox" data-key="welcome-3"> <div><strong>Set your insurance coverage</strong><br><span style="color:var(--muted)">Confirm contents, additional living expenses, and liability limits.</span></div></li>
+        <li><input type="checkbox" data-key="welcome-4"> <div><strong>Register pets or lease details</strong><br><span style="color:var(--muted)">Submit required notifications to Manager.</span></div></li>
+        <li><input type="checkbox" data-key="welcome-5"> <div><strong>Bookmark violation + maintenance forms</strong><br><span style="color:var(--muted)">Know exactly where to submit requests fast.</span></div></li>
+      </ul>
+    </section>
+
+    <section class="card" id="service-levels">
+      <h2>Service Standards (SLA)</h2>
+      <p class="subtitle">Expected response timelines for the most common requests.</p>
+      <div class="sla-grid">
+        <div class="sla-card"><strong>Maintenance Request</strong>Initial acknowledgment within 2 business days.</div>
+        <div class="sla-card"><strong>Violation Report</strong>Written acknowledgment and Board review at next scheduled meeting.</div>
+        <div class="sla-card"><strong>Renovation / AC Approval</strong>Decision target: within 10 business days after complete documents.</div>
+        <div class="sla-card"><strong>Urgent Safety Issue</strong>Escalated same day to Manager/contractor triage.</div>
+      </div>
+    </section>
+
+    <section class="card" id="calendar">
+      <h2>Annual Condo Calendar</h2>
+      <p class="subtitle">Key owner dates and seasonal rule windows.</p>
+      <div class="calendar-grid">
+        <div class="calendar-item"><div class="month">January-February</div><strong>Holiday lights wrap-up</strong><p style="margin:6px 0 0">Lights off by Feb 1; remove by Mar 1.</p></div>
+        <div class="calendar-item"><div class="month">March-April</div><strong>Spring inspections</strong><p style="margin:6px 0 0">Exterior walkthrough and budget planning cycle.</p></div>
+        <div class="calendar-item"><div class="month">May-June</div><strong>AGM planning window</strong><p style="margin:6px 0 0">Review board nominations and annual documents.</p></div>
+        <div class="calendar-item"><div class="month">July-August</div><strong>Landscape and exterior projects</strong><p style="margin:6px 0 0">Peak contractor window for approved upgrades.</p></div>
+        <div class="calendar-item"><div class="month">September-October</div><strong>Budget draft and reserve planning</strong><p style="margin:6px 0 0">Fee and reserve inputs prepared for owner review.</p></div>
+        <div class="calendar-item"><div class="month">November-December</div><strong>Holiday season rules active</strong><p style="margin:6px 0 0">Seasonal decor timing and winter readiness.</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="transparency">
+      <h2>Board Transparency Center</h2>
+      <p class="subtitle">Decisions, project status, and what is coming next.</p>
+      <div class="decision-list">
+        <div class="decision-item"><strong>Recent decision:</strong> Visitor stall signage refresh approved (April 2026).</div>
+        <div class="decision-item"><strong>Open initiative:</strong> Exterior lighting audit in progress; contractor quotes under review.</div>
+        <div class="decision-item"><strong>Upcoming meeting:</strong> Next Board meeting target week of June 10, 2026.</div>
+        <div class="decision-item"><strong>Document governance:</strong> Handbook revision log now published for owner visibility.</div>
+      </div>
+    </section>
+
+    <section class="card" id="fines-coach">
+      <h2>Avoid Fines Coach</h2>
+      <p class="subtitle">Most common violations and the easiest way to stay compliant.</p>
+      <div class="fines-coach">
+        <div class="coach-item"><strong>Parking violations:</strong> Never park in fire lanes or outside marked stalls. <a href="#policy-1">Check parking policy</a>.</div>
+        <div class="coach-item"><strong>Renovation starts too early:</strong> Do not begin until written approval arrives. <a href="#requests">Use renovation request form</a>.</div>
+        <div class="coach-item"><strong>Pet compliance issues:</strong> Keep pets leashed on common property and clean up immediately. <a href="#policy-9">Review pet policy</a>.</div>
+        <div class="coach-item"><strong>Holiday light timing:</strong> Respect the Nov 1-Mar 1 window and removal deadlines. <a href="#policy-7">See holiday lights rules</a>.</div>
+      </div>
+    </section>
+
+    <section class="card" id="print-packs">
+      <h2>Printable Compliance Packs</h2>
+      <p class="subtitle">Quick-print bundles for owners, tenants, and contractors.</p>
+      <div class="print-packs">
+        <div class="pack"><strong>New Owner Pack</strong><p style="margin:8px 0;color:var(--muted);font-size:.88rem">Parking, insurance, contacts, and top bylaws.</p><a href="javascript:window.print()">Print this page</a></div>
+        <div class="pack"><strong>Renovation Pack</strong><p style="margin:8px 0;color:var(--muted);font-size:.88rem">Approval requirements, contractor insurance, debris rules.</p><a href="#requests">Open request form</a></div>
+        <div class="pack"><strong>Landlord / Tenant Pack</strong><p style="margin:8px 0;color:var(--muted);font-size:.88rem">Lease notice, insurance standards, resident rules.</p><a href="#policy-11">Open rental policy</a></div>
+        <div class="pack"><strong>Board Quick Pack</strong><p style="margin:8px 0;color:var(--muted);font-size:.88rem">Violation workflow, fines, and escalation process.</p><a href="#violation-process">Open enforcement section</a></div>
+      </div>
+    </section>
+
+    <div class="no-results hidden" id="noResults">No matches found. Try a different search term.</div>
+
+  </main>
+</div>
+
+  <div class="mobile-dock" role="navigation" aria-label="Quick mobile actions">
+    <a href="#requests">Request</a>
+    <a href="#violation-process">Violation</a>
+    <a href="#policy-1">Parking</a>
+    <a href="#contacts">Contact</a>
+    <button type="button" onclick="focusSearchBox()">Search</button>
+  </div>
+
+  <script>
+  // Safari-safe localStorage: throws SecurityError on file:// and in some private modes.
+  const safeStore = {
+    get: function(key) {
+      try { return window.localStorage.getItem(key); } catch (e) { return null; }
+    },
+    set: function(key, value) {
+      try { window.localStorage.setItem(key, value); } catch (e) { /* no-op */ }
+    }
+  };
+
+  const TRANSLATE_LANGUAGE_NAMES = {
+    'en': 'English',
+    'ar': 'Arabic',
+    'bn': 'Bengali',
+    'zh-cn': 'Chinese (Simplified)',
+    'zh-tw': 'Chinese (Traditional)',
+    'nl': 'Dutch',
+    'fr': 'French',
+    'de': 'German',
+    'gu': 'Gujarati',
+    'hi': 'Hindi',
+    'it': 'Italian',
+    'ja': 'Japanese',
+    'ko': 'Korean',
+    'fa': 'Persian',
+    'pa': 'Punjabi',
+    'pl': 'Polish',
+    'pt': 'Portuguese',
+    'ru': 'Russian',
+    'es': 'Spanish',
+    'tl': 'Filipino',
+    'ta': 'Tamil',
+    'th': 'Thai',
+    'tr': 'Turkish',
+    'uk': 'Ukrainian',
+    'ur': 'Urdu',
+    'vi': 'Vietnamese'
+  };
+
+  function normalizeLangCode(code) {
+    return (code || 'en').toLowerCase().trim();
+  }
+
+  function getLangDisplayName(code) {
+    const normalized = normalizeLangCode(code);
+    if (TRANSLATE_LANGUAGE_NAMES[normalized]) return TRANSLATE_LANGUAGE_NAMES[normalized];
+
+    const base = normalized.split('-')[0];
+    if (TRANSLATE_LANGUAGE_NAMES[base]) return TRANSLATE_LANGUAGE_NAMES[base];
+
+    return base ? base.toUpperCase() : 'English';
+  }
+
+  function setTranslatePill(code) {
+    const pill = document.getElementById('translateLangPill');
+    if (!pill) return;
+
+    const displayName = getLangDisplayName(code);
+    const label = 'Current language ' + displayName;
+    pill.textContent = displayName;
+    pill.setAttribute('aria-label', label);
+    pill.setAttribute('title', label);
+  }
+
+  function getGoogTransLangFromCookie() {
+    const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/i);
+    if (!match) return 'en';
+
+    const value = decodeURIComponent(match[1]);
+    const parts = value.split('/').filter(Boolean);
+    return parts.length >= 2 ? parts[1] : 'en';
+  }
+
+  function bindTranslateSelect() {
+    const select = document.querySelector('#google_translate_element select.goog-te-combo');
+    if (!select) return false;
+    if (select.dataset.pillBound === 'true') return true;
+
+    select.dataset.pillBound = 'true';
+    setTranslatePill(select.value || getGoogTransLangFromCookie());
+    select.addEventListener('change', function() {
+      setTranslatePill(select.value || 'en');
+    });
+    return true;
+  }
+
+  function initTranslatePillSync() {
+    setTranslatePill(getGoogTransLangFromCookie());
+
+    if (bindTranslateSelect()) return;
+
+    const observer = new MutationObserver(function() {
+      if (bindTranslateSelect()) observer.disconnect();
+    });
+
+    const target = document.getElementById('google_translate_element');
+    if (target) {
+      observer.observe(target, { childList: true, subtree: true });
+    }
+
+    setTimeout(function() {
+      bindTranslateSelect();
+      observer.disconnect();
+    }, 7000);
+  }
+
+  function resetGoogleTranslate() {
+    const hostname = window.location.hostname;
+    const domains = [hostname, '.' + hostname];
+
+    document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+    domains.forEach(function(domain) {
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + domain;
+    });
+
+    const langSelect = document.querySelector('#google_translate_element select.goog-te-combo');
+    if (langSelect) {
+      langSelect.value = '';
+      langSelect.dispatchEvent(new Event('change'));
+    }
+
+    setTranslatePill('en');
+
+    const currentUrl = new URL(window.location.href);
+    currentUrl.searchParams.delete('lang');
+    window.location.href = currentUrl.toString();
+  }
+
+  const STATUS_DEMO = {
+    'HL-2026-0142': 'Under Review - Renovation request assigned to Board agenda (next meeting).',
+    'HL-2026-0147': 'Actioned - Maintenance work order issued to contractor.',
+    'HL-2026-0150': 'Closed - Violation review completed and file resolved.'
+  };
+
+  const ASSISTANT_SYNONYMS = {
+    ac: ['air', 'conditioner', 'cooling'],
+    parking: ['stall', 'visitor', 'fire', 'lane', 'tow', 'towed'],
+    pet: ['dog', 'cat', 'service', 'leash'],
+    pets: ['dog', 'cat', 'service', 'leash'],
+    rent: ['rental', 'lease', 'tenant', 'landlord'],
+    lease: ['rental', 'tenant', 'landlord'],
+    renovation: ['reno', 'contractor', 'permit', 'approval'],
+    insurance: ['liability', 'coverage', 'contents'],
+    violation: ['fine', 'enforcement', 'report'],
+    lights: ['holiday', 'seasonal', 'decor']
+  };
+
+  const ASSISTANT_SELECTORS = [
+    '#policies .policy',
+    '#bylaws .bylaw',
+    '#faq details.faq',
+    '#requests .request-card',
+    '#approvals table.approval',
+    '#fines',
+    '#violation-process',
+    '#policy-1',
+    '#policy-7',
+    '#policy-8',
+    '#policy-9',
+    '#policy-10',
+    '#policy-11',
+    '#policy-12',
+    '#bylaw-43',
+    '#bylaw-51',
+    '#bylaw-62'
+  ];
+
+  const ASSISTANT_INTENT_HINTS = {
+    process: ['how', 'submit', 'request', 'form', 'report', 'process', 'timeline', 'status', 'contact', 'approval', 'notify'],
+    bylaw: ['bylaw', 'legal', 'law', 'act', 'enforcement', 'fine', 'prohibited', 'penalty'],
+    policy: ['policy', 'rule', 'allowed', 'can', 'parking', 'pet', 'renovation', 'insurance', 'rental']
+  };
+
+  let ASSISTANT_CORPUS = [];
+
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function normalizeText(text) {
+    return String(text || '')
+      .toLowerCase()
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function tokenize(text) {
+    const stop = new Set(['the', 'and', 'for', 'with', 'from', 'this', 'that', 'what', 'when', 'where', 'how', 'can', 'i', 'my', 'to', 'of', 'in', 'on', 'a', 'an', 'is', 'it']);
+    return normalizeText(text)
+      .split(/[^a-z0-9-]+/)
+      .filter(function(t) { return t && t.length > 2 && !stop.has(t); });
+  }
+
+  function getNodeAnchor(node) {
+    if (!node) return '#welcome';
+    if (node.id) return '#' + node.id;
+    const parentWithId = node.closest('[id]');
+    return parentWithId ? '#' + parentWithId.id : '#welcome';
+  }
+
+  function getNodeTitle(node) {
+    if (!node) return 'Handbook section';
+    const heading = node.querySelector('h2, h3, summary, strong');
+    if (heading && heading.textContent.trim()) return heading.textContent.trim().replace(/\s+/g, ' ');
+    const ownId = node.id ? node.id.replaceAll('-', ' ') : 'Handbook section';
+    return ownId.charAt(0).toUpperCase() + ownId.slice(1);
+  }
+
+  function inferDocIntent(anchor, title, text) {
+    const a = normalizeText(anchor);
+    const t = normalizeText(title);
+    const x = normalizeText(text);
+
+    if (a.includes('bylaw') || t.includes('bylaw')) return 'bylaw';
+    if (
+      a.includes('request') ||
+      a.includes('violation-process') ||
+      a.includes('service-levels') ||
+      a.includes('status-tracker') ||
+      a.includes('contacts') ||
+      x.includes('request via email') ||
+      x.includes('notify the manager') ||
+      x.includes('step-by-step')
+    ) {
+      return 'process';
+    }
+
+    return 'policy';
+  }
+
+  function detectQueryIntent(terms, expandedTerms) {
+    const allTerms = new Set([].concat(terms || [], expandedTerms || []));
+    const score = { process: 0, bylaw: 0, policy: 0 };
+
+    Object.keys(ASSISTANT_INTENT_HINTS).forEach(function(intent) {
+      ASSISTANT_INTENT_HINTS[intent].forEach(function(hint) {
+        if (allTerms.has(hint)) score[intent] += 1;
+      });
+    });
+
+    const ranked = Object.keys(score).sort(function(a, b) { return score[b] - score[a]; });
+    return score[ranked[0]] > 0 ? ranked[0] : 'policy';
+  }
+
+  function confidenceFromScore(score) {
+    if (score >= 26) return { level: 'High', className: 'assistant-confidence-high' };
+    if (score >= 14) return { level: 'Medium', className: 'assistant-confidence-medium' };
+    return { level: 'Low', className: 'assistant-confidence-low' };
+  }
+
+  function intentBadgeMeta(intent) {
+    const map = {
+      policy: { label: 'Policy', className: 'assistant-intent-policy' },
+      bylaw: { label: 'Bylaw', className: 'assistant-intent-bylaw' },
+      process: { label: 'Process', className: 'assistant-intent-process' }
+    };
+    return map[intent] || map.policy;
+  }
+
+  function buildAssistantCorpus() {
+    const seen = new Set();
+    const docs = [];
+
+    ASSISTANT_SELECTORS.forEach(function(sel) {
+      document.querySelectorAll(sel).forEach(function(node) {
+        const anchor = getNodeAnchor(node);
+        if (seen.has(anchor)) return;
+        seen.add(anchor);
+
+        const text = normalizeText(node.textContent);
+        if (!text || text.length < 40) return;
+
+        docs.push({
+          anchor: anchor,
+          title: getNodeTitle(node),
+          text: text,
+          intent: inferDocIntent(anchor, getNodeTitle(node), text)
+        });
+      });
+    });
+
+    ASSISTANT_CORPUS = docs;
+  }
+
+  function scoreAssistantDoc(doc, query, terms, expandedTerms, queryIntent) {
+    let score = 0;
+    const title = normalizeText(doc.title);
+    const text = doc.text;
+
+    if (text.includes(query)) score += 18;
+    if (title.includes(query)) score += 20;
+
+    terms.forEach(function(term) {
+      const inTitle = title.includes(term);
+      if (inTitle) score += 9;
+
+      const termRegex = new RegExp('\\b' + term.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&') + '\\b', 'g');
+      const matches = text.match(termRegex);
+      if (matches) score += Math.min(matches.length, 6) * 3;
+    });
+
+    expandedTerms.forEach(function(term) {
+      if (title.includes(term)) score += 2;
+      if (text.includes(term)) score += 1;
+    });
+
+    if (queryIntent && doc.intent === queryIntent) score += 7;
+    if (queryIntent === 'bylaw' && doc.anchor.includes('bylaw')) score += 4;
+    if (queryIntent === 'process' && (doc.anchor.includes('request') || doc.anchor.includes('process') || doc.anchor.includes('status'))) score += 4;
+
+    return score;
+  }
+
+  function makeAssistantSnippet(doc, terms) {
+    const bestTerm = terms.find(function(t) { return doc.text.includes(t); }) || terms[0] || '';
+    const idx = bestTerm ? doc.text.indexOf(bestTerm) : 0;
+    const start = Math.max(0, idx - 90);
+    const end = Math.min(doc.text.length, idx + 170);
+    const raw = doc.text.slice(start, end).trim();
+    const clean = raw.replace(/\s+/g, ' ');
+    return (start > 0 ? '... ' : '') + clean + (end < doc.text.length ? ' ...' : '');
+  }
+
+  function runPolicyAssistant() {
+    const input = document.getElementById('assistantInput');
+    const out = document.getElementById('assistantAnswer');
+    if (!input || !out) return;
+
+    const raw = (input.value || '').trim();
+    const query = normalizeText(raw);
+    if (!query) {
+      out.textContent = 'Type a question like: Can I install AC? or Can I park in visitor stalls overnight?';
+      return;
+    }
+
+    if (ASSISTANT_CORPUS.length === 0) buildAssistantCorpus();
+
+    const terms = tokenize(query);
+    const expanded = new Set(terms);
+    terms.forEach(function(term) {
+      if (ASSISTANT_SYNONYMS[term]) {
+        ASSISTANT_SYNONYMS[term].forEach(function(s) { expanded.add(s); });
+      }
+    });
+
+    const expandedTerms = Array.from(expanded);
+    const queryIntent = detectQueryIntent(terms, expandedTerms);
+    const ranked = ASSISTANT_CORPUS
+      .map(function(doc) {
+        return {
+          doc: doc,
+          score: scoreAssistantDoc(doc, query, terms, expandedTerms, queryIntent)
+        };
+      })
+      .filter(function(item) { return item.score > 0; })
+      .sort(function(a, b) { return b.score - a.score; })
+      .slice(0, 3);
+
+    if (ranked.length === 0) {
+      out.innerHTML = 'I could not confidently match that yet. Try keywords like parking, pets, renovations, rental, insurance, fines, or holiday lights. <a href="#faq">Open FAQ</a>.';
+      return;
+    }
+
+    const primary = ranked[0].doc;
+    const confidence = confidenceFromScore(ranked[0].score);
+    const intentMeta = intentBadgeMeta(primary.intent);
+    const primarySnippet = makeAssistantSnippet(primary, terms);
+    const extra = ranked.slice(1).map(function(item) {
+      return '<a href="' + item.doc.anchor + '">' + escapeHtml(item.doc.title) + '</a>';
+    });
+
+    let html = '<strong>Best match:</strong> <a href="' + primary.anchor + '">' + escapeHtml(primary.title) + '</a>';
+    html += '<div class="assistant-meta">';
+    html += '<span class="assistant-badge ' + intentMeta.className + '">' + intentMeta.label + '</span>';
+    html += '<span class="assistant-badge ' + confidence.className + '">' + confidence.level + ' confidence</span>';
+    html += '</div>';
+    html += '<span>' + escapeHtml(primarySnippet) + '</span>';
+
+    if (extra.length) {
+      html += '<br><strong>Also relevant:</strong> ' + extra.join(' · ');
+    }
+
+    out.innerHTML = html;
+  }
+
+  function dismissUrgentBanner() {
+    const el = document.getElementById('urgentBanner');
+    if (el) el.classList.add('hidden');
+    safeStore.set('hl-urgent-banner-dismissed', 'true');
+  }
+
+  function restoreUrgentBanner() {
+    if (safeStore.get('hl-urgent-banner-dismissed') === 'true') {
+      const el = document.getElementById('urgentBanner');
+      if (el) el.classList.add('hidden');
+    }
+  }
+
+  function setToolPressed(id, state) {
+    const btn = document.getElementById(id);
+    if (btn) btn.setAttribute('aria-pressed', state ? 'true' : 'false');
+  }
+
+  function setFontScale(mode) {
+    document.body.classList.remove('font-lg', 'font-xl');
+    if (mode === 'lg') document.body.classList.add('font-lg');
+    if (mode === 'xl') document.body.classList.add('font-xl');
+    safeStore.set('hl-font-scale', mode);
+  }
+
+  function toggleHighContrast() {
+    document.body.classList.toggle('high-contrast');
+    const active = document.body.classList.contains('high-contrast');
+    safeStore.set('hl-high-contrast', active ? '1' : '0');
+    setToolPressed('toolContrast', active);
+  }
+
+  function toggleDyslexia() {
+    document.body.classList.toggle('dyslexia');
+    const active = document.body.classList.contains('dyslexia');
+    safeStore.set('hl-dyslexia', active ? '1' : '0');
+    setToolPressed('toolDyslexia', active);
+  }
+
+  function readWelcomeAloud() {
+    const welcome = document.getElementById('welcome');
+    if (!welcome || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(welcome.innerText.slice(0, 850));
+    utter.lang = 'en-CA';
+    utter.rate = 1;
+    window.speechSynthesis.speak(utter);
+  }
+
+  function restoreToolState() {
+    const font = safeStore.get('hl-font-scale') || 'base';
+    setFontScale(font);
+
+    if (safeStore.get('hl-high-contrast') === '1') {
+      document.body.classList.add('high-contrast');
+      setToolPressed('toolContrast', true);
+    }
+    if (safeStore.get('hl-dyslexia') === '1') {
+      document.body.classList.add('dyslexia');
+      setToolPressed('toolDyslexia', true);
+    }
+  }
+
+  function filterDashboard(role) {
+    const cards = document.querySelectorAll('#dashboardGrid .dash-card');
+    cards.forEach(function(card) {
+      const roles = (card.dataset.role || '').split(' ');
+      card.classList.toggle('hidden', role !== 'all' && !roles.includes(role));
+    });
+
+    ['dashAll', 'dashOwner', 'dashTenant', 'dashBoard'].forEach(function(id) {
+      const btn = document.getElementById(id);
+      if (btn) btn.setAttribute('aria-pressed', 'false');
+    });
+    const activeMap = { all: 'dashAll', owner: 'dashOwner', tenant: 'dashTenant', board: 'dashBoard' };
+    const activeBtn = document.getElementById(activeMap[role] || 'dashAll');
+    if (activeBtn) activeBtn.setAttribute('aria-pressed', 'true');
+  }
+
+  function lookupStatus() {
+    const input = document.getElementById('statusRef');
+    const out = document.getElementById('statusAnswer');
+    if (!input || !out) return;
+
+    const ref = (input.value || '').trim().toUpperCase();
+    if (!ref) {
+      out.textContent = 'Enter a reference ID such as HL-2026-0142.';
+      return;
+    }
+
+    out.innerHTML = STATUS_DEMO[ref]
+      ? '<strong>' + ref + ':</strong> ' + STATUS_DEMO[ref]
+      : '<strong>' + ref + ':</strong> Not found in demo tracker. Confirm the reference with the Manager.';
+  }
+
+  function setupOnboardingChecklist() {
+    const boxes = document.querySelectorAll('#onboardingChecklist input[type="checkbox"]');
+    boxes.forEach(function(box) {
+      const key = 'hl-check-' + box.dataset.key;
+      box.checked = safeStore.get(key) === '1';
+      box.addEventListener('change', function() {
+        safeStore.set(key, box.checked ? '1' : '0');
+      });
+    });
+  }
+
+  function focusSearchBox() {
+    const box = document.getElementById('searchBox');
+    if (!box) return;
+    box.focus();
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function initEnhancements() {
+    restoreUrgentBanner();
+    restoreToolState();
+    filterDashboard('all');
+    setupOnboardingChecklist();
+    buildAssistantCorpus();
+
+    const assistantInput = document.getElementById('assistantInput');
+    if (assistantInput) {
+      assistantInput.addEventListener('keydown', function(evt) {
+        if (evt.key === 'Enter') {
+          evt.preventDefault();
+          runPolicyAssistant();
+        }
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      initTranslatePillSync();
+      initEnhancements();
+    });
+  } else {
+    initTranslatePillSync();
+    initEnhancements();
+  }
+  </script>
+
+<footer class="site">
+  <p><strong>Haddow Landing — Condominium Corporation No. 172 0499</strong></p>
+  <p>2121 Haddow Drive NW, Edmonton, Alberta T6R 0W6</p>
+  <p style="margin-top:10px;font-size:.8rem">This handbook is a homeowner-friendly summary. The official Bylaws (registered at the Alberta Land Titles Office) and the Alberta <a href="https://open.alberta.ca/publications/c22" target="_blank" rel="noopener"><em>Condominium Property Act</em></a> prevail in case of any discrepancy.</p>
+  <p style="margin-top:10px;font-size:.8rem">© Haddow Landing Condominium Board · Updated November 2025</p>
+</footer>
+
+<script>
+  // Client-side search
+  (function(){
+    const box = document.getElementById('searchBox');
+    const noRes = document.getElementById('noResults');
+    if(!box) return;
+
+    // Searchable units: each FAQ, each policy, each bylaw
+    const targets = [
+      ...document.querySelectorAll('details.faq'),
+      ...document.querySelectorAll('.policy'),
+      ...document.querySelectorAll('.bylaw'),
+      ...document.querySelectorAll('.quick-link')
+    ];
+
+    function clearHighlights(node){
+      node.querySelectorAll('mark.highlight').forEach(m=>{
+        const t = document.createTextNode(m.textContent);
+        m.parentNode.replaceChild(t,m);
+      });
+      node.normalize();
+    }
+    function highlight(node, term){
+      if(!term) return;
+      const re = new RegExp('('+term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      function walk(n){
+        if(n.nodeType===3){
+          if(re.test(n.nodeValue)){
+            const frag = document.createDocumentFragment();
+            n.nodeValue.split(re).forEach(part=>{
+              if(re.test(part)){
+                const m = document.createElement('mark');
+                m.className='highlight';m.textContent=part;
+                frag.appendChild(m);
+              } else {
+                frag.appendChild(document.createTextNode(part));
+              }
+              re.lastIndex=0;
+            });
+            n.parentNode.replaceChild(frag,n);
+          }
+        } else if(n.nodeType===1 && !['SCRIPT','STYLE','MARK'].includes(n.tagName)){
+          Array.from(n.childNodes).forEach(walk);
+        }
+      }
+      walk(node);
+    }
+
+    let debounce;
+    box.addEventListener('input', function(){
+      clearTimeout(debounce);
+      debounce = setTimeout(()=>{
+        const q = box.value.trim().toLowerCase();
+        let visible = 0;
+        targets.forEach(el=>{
+          clearHighlights(el);
+          if(!q){
+            el.classList.remove('hidden');
+            if(el.tagName==='DETAILS') el.open = false;
+            visible++;
+            return;
+          }
+          const text = el.textContent.toLowerCase();
+          if(text.includes(q)){
+            el.classList.remove('hidden');
+            if(el.tagName==='DETAILS') el.open = true;
+            highlight(el, box.value.trim());
+            visible++;
+          } else {
+            el.classList.add('hidden');
+          }
+        });
+        // Show all section cards if any of their children matched
+        document.querySelectorAll('section.card').forEach(s=>{
+          const any = s.querySelectorAll('details.faq:not(.hidden), .policy:not(.hidden), .bylaw:not(.hidden), .quick-link:not(.hidden)').length;
+          if(q && any===0 && s.id!=='welcome') s.classList.add('hidden');
+          else s.classList.remove('hidden');
+        });
+        noRes.classList.toggle('hidden', visible>0 || !q);
+      },150);
+    });
+  })();
+
+  // Close mobile menu when link clicked
+  document.querySelectorAll('nav.toc a').forEach(a=>{
+    a.addEventListener('click',()=>{
+      if(window.innerWidth<=900) document.querySelector('nav.toc').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
